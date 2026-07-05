@@ -19,6 +19,9 @@ namespace OMC_PROJECT
                 InitializeComponent();
             }
 
-           
+        private void btnRide_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("uuu");
         }
+    }
     }
