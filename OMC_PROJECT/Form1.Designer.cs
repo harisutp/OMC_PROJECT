@@ -68,6 +68,7 @@
             this.btnProfile.TabIndex = 3;
             this.btnProfile.Text = "PROFILE";
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnBalance
             // 

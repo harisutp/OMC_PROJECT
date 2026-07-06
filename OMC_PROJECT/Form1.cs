@@ -23,5 +23,10 @@ namespace OMC_PROJECT
         {
             MessageBox.Show("uuu");
         }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            btnBalance .Enabled = false;
+        }
     }
     }
