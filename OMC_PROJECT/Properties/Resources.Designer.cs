@@ -63,9 +63,59 @@ namespace OMC_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6219616955832930781_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("6219616955832930781-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6219616955832930781_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("6219616955832930781-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_2171382633_612x612_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-2171382633-612x612-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2026_07_02_141641 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2026-07-02 141641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wallet_by_back1design1_580x389_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Wallet-by-back1design1-580x389-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wallet_by_back1design1_580x389_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("Wallet-by-back1design1-580x389-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

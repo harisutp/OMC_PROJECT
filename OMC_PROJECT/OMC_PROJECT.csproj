@@ -54,11 +54,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formbalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formbalance.Designer.cs">
+      <DependentUpon>formbalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlogin.Designer.cs">
+      <DependentUpon>formlogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="formprofile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formprofile.Designer.cs">
       <DependentUpon>formprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsignup.Designer.cs">
+      <DependentUpon>formsignup.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,8 +101,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formbalance.resx">
+      <DependentUpon>formbalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlogin.resx">
+      <DependentUpon>formlogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formprofile.resx">
       <DependentUpon>formprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsignup.resx">
+      <DependentUpon>formsignup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,6 +147,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2026-07-02 141641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallet-by-back1design1-580x389-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-2171382633-612x612-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6219616955832930781-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6219616955832930781-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallet-by-back1design1-580x389-removebg-preview1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
