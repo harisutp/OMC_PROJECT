@@ -26,7 +26,7 @@ namespace OMC_PROJECT
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            btnBalance .Enabled = false;
+            btnBalance .Enabled = true;
         }
     }
     }
