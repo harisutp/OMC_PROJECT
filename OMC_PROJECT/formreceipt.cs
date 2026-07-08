@@ -16,5 +16,10 @@ namespace OMC_PROJECT
         {
             InitializeComponent();
         }
+
+        private void lblReceipt_Click(object sender, EventArgs e)
+        {
+            //ANA
+        }
     }
 }
