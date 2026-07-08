@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace OMC_PROJECT
 {
-    public partial class formreceipt : Form
+    public partial class Form1 : Form
     {
-        public formreceipt()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void lblReceipt_Click(object sender, EventArgs e)
-        {
-            //ANA
         }
     }
 }
