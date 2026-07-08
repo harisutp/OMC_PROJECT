@@ -1,6 +1,6 @@
 ﻿namespace OMC_PROJECT
 {
-    partial class formprofile
+    partial class formreceipt
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.lblDisabP = new System.Windows.Forms.Label();
-            this.lblEmailP = new System.Windows.Forms.Label();
-            this.lblNameP = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.NAME = new System.Windows.Forms.Label();
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblnmeProf = new System.Windows.Forms.Label();
@@ -47,99 +40,23 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblReceipt = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             this.pnlSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.DarkBlue;
-            this.pnlMain.Controls.Add(this.btnEdit);
-            this.pnlMain.Controls.Add(this.lblDisabP);
-            this.pnlMain.Controls.Add(this.lblEmailP);
-            this.pnlMain.Controls.Add(this.lblNameP);
-            this.pnlMain.Controls.Add(this.label3);
-            this.pnlMain.Controls.Add(this.label2);
-            this.pnlMain.Controls.Add(this.NAME);
-            this.pnlMain.Controls.Add(this.pictureBox1);
+            this.pnlMain.Controls.Add(this.label1);
+            this.pnlMain.Controls.Add(this.lblReceipt);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(247, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(747, 566);
-            this.pnlMain.TabIndex = 3;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(337, 490);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(106, 36);
-            this.btnEdit.TabIndex = 7;
-            this.btnEdit.Text = "EDIT";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // lblDisabP
-            // 
-            this.lblDisabP.BackColor = System.Drawing.Color.White;
-            this.lblDisabP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDisabP.Location = new System.Drawing.Point(168, 436);
-            this.lblDisabP.Name = "lblDisabP";
-            this.lblDisabP.Size = new System.Drawing.Size(444, 33);
-            this.lblDisabP.TabIndex = 6;
-            // 
-            // lblEmailP
-            // 
-            this.lblEmailP.BackColor = System.Drawing.Color.White;
-            this.lblEmailP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEmailP.Location = new System.Drawing.Point(168, 354);
-            this.lblEmailP.Name = "lblEmailP";
-            this.lblEmailP.Size = new System.Drawing.Size(444, 33);
-            this.lblEmailP.TabIndex = 5;
-            // 
-            // lblNameP
-            // 
-            this.lblNameP.BackColor = System.Drawing.Color.White;
-            this.lblNameP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNameP.Location = new System.Drawing.Point(168, 277);
-            this.lblNameP.Name = "lblNameP";
-            this.lblNameP.Size = new System.Drawing.Size(444, 33);
-            this.lblNameP.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(163, 411);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Disabilities";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(163, 329);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Email / Phone Number";
-            // 
-            // NAME
-            // 
-            this.NAME.AutoSize = true;
-            this.NAME.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NAME.ForeColor = System.Drawing.Color.White;
-            this.NAME.Location = new System.Drawing.Point(163, 252);
-            this.NAME.Name = "NAME";
-            this.NAME.Size = new System.Drawing.Size(65, 25);
-            this.NAME.TabIndex = 1;
-            this.NAME.Text = "Name";
+            this.pnlMain.TabIndex = 5;
             // 
             // pnlSidebar
             // 
@@ -153,7 +70,7 @@
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(247, 566);
-            this.pnlSidebar.TabIndex = 2;
+            this.pnlSidebar.TabIndex = 4;
             // 
             // panel1
             // 
@@ -268,30 +185,39 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : Hassan";
             // 
-            // pictureBox1
+            // lblReceipt
             // 
-            this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources.istockphoto_2171382633_612x612_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(280, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 217);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblReceipt.BackColor = System.Drawing.Color.LightGray;
+            this.lblReceipt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblReceipt.Location = new System.Drawing.Point(204, 100);
+            this.lblReceipt.Name = "lblReceipt";
+            this.lblReceipt.Size = new System.Drawing.Size(358, 417);
+            this.lblReceipt.TabIndex = 0;
             // 
-            // formprofile
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(287, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 52);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "RECEIPT :";
+            // 
+            // formreceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 566);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
-            this.Name = "formprofile";
-            this.Text = "formprofile";
+            this.Name = "formreceipt";
+            this.Text = "formreceipt";
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
             this.pnlSidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,23 +226,17 @@
 
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Panel pnlSidebar;
-        private System.Windows.Forms.Button btnProfile;
-        private System.Windows.Forms.Button btnBalance;
-        private System.Windows.Forms.Button btnRide;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label NAME;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblNameP;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblDisabP;
-        private System.Windows.Forms.Label lblEmailP;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblnmeProf;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.Button btnBalance;
+        private System.Windows.Forms.Button btnRide;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblReceipt;
+        private System.Windows.Forms.Label label1;
     }
 }

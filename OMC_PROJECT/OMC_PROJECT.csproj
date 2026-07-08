@@ -48,11 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="formLetsRide.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="formLetsRide.Designer.cs">
+      <DependentUpon>formLetsRide.cs</DependentUpon>
     </Compile>
     <Compile Include="formbalance.cs">
       <SubType>Form</SubType>
@@ -66,11 +66,23 @@
     <Compile Include="formlogin.Designer.cs">
       <DependentUpon>formlogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="formPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPay.Designer.cs">
+      <DependentUpon>formPay.cs</DependentUpon>
+    </Compile>
     <Compile Include="formprofile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formprofile.Designer.cs">
       <DependentUpon>formprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formreceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formreceipt.Designer.cs">
+      <DependentUpon>formreceipt.cs</DependentUpon>
     </Compile>
     <Compile Include="formsignup.cs">
       <SubType>Form</SubType>
@@ -98,8 +110,8 @@
     <Compile Include="UserControl3.Designer.cs">
       <DependentUpon>UserControl3.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="formLetsRide.resx">
+      <DependentUpon>formLetsRide.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formbalance.resx">
       <DependentUpon>formbalance.cs</DependentUpon>
@@ -107,8 +119,14 @@
     <EmbeddedResource Include="formlogin.resx">
       <DependentUpon>formlogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formPay.resx">
+      <DependentUpon>formPay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formprofile.resx">
       <DependentUpon>formprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formreceipt.resx">
+      <DependentUpon>formreceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsignup.resx">
       <DependentUpon>formsignup.cs</DependentUpon>
@@ -162,6 +180,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Wallet-by-back1design1-580x389-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0930.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0931.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0933.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0932.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped_circle_image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

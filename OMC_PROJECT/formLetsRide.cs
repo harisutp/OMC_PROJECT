@@ -11,10 +11,10 @@ using System.Windows.Forms;
 namespace OMC_PROJECT
 {
     using System.Windows.Forms;
-    public partial class Form1 : Form
+    public partial class formLetsRide : Form
     {
       
-            public Form1()
+            public formLetsRide()
             {
                 InitializeComponent();
             }
@@ -22,6 +22,13 @@ namespace OMC_PROJECT
         private void btnRide_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Budu");
+        }
+
+        private void btnBalance_Click(object sender, EventArgs e)
+        {
+            formbalance form2 = new formbalance();
+            form2.Show();
+            this.Hide();
         }
     }
     }

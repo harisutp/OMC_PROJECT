@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
             this.label_1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSignup2 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,17 +40,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPw = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(273, 248);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(444, 33);
-            this.label4.TabIndex = 6;
             // 
             // label_1
             // 
@@ -65,15 +56,6 @@
             this.label_1.TabIndex = 5;
             this.label_1.Text = "Email / Phone Number";
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(273, 348);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(444, 33);
-            this.label1.TabIndex = 8;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -85,31 +67,31 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Password";
             // 
-            // button1
+            // btnSignup2
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(316, 431);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 42);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "SIGN UP";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSignup2.BackColor = System.Drawing.Color.SlateGray;
+            this.btnSignup2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSignup2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignup2.ForeColor = System.Drawing.Color.White;
+            this.btnSignup2.Location = new System.Drawing.Point(316, 431);
+            this.btnSignup2.Name = "btnSignup2";
+            this.btnSignup2.Size = new System.Drawing.Size(157, 42);
+            this.btnSignup2.TabIndex = 9;
+            this.btnSignup2.Text = "SIGN UP";
+            this.btnSignup2.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnLogin
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(517, 431);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 42);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "LOGIN";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnLogin.BackColor = System.Drawing.Color.SlateGray;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(517, 431);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(157, 42);
+            this.btnLogin.TabIndex = 10;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -201,23 +183,39 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(271, 251);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(444, 34);
+            this.txtEmail.TabIndex = 29;
+            // 
+            // txtPw
+            // 
+            this.txtPw.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPw.Location = new System.Drawing.Point(273, 351);
+            this.txtPw.Name = "txtPw";
+            this.txtPw.Size = new System.Drawing.Size(444, 34);
+            this.txtPw.TabIndex = 30;
+            // 
             // formlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(994, 566);
+            this.Controls.Add(this.txtPw);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnSignup2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label_1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
@@ -230,13 +228,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label_1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSignup2;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -245,5 +240,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPw;
     }
 }

@@ -32,8 +32,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblnmeProf = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,12 +44,10 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblnmeProf = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMain
@@ -93,6 +93,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "YOUR BALANCE IS :";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources.Wallet_by_back1design1_580x389_removebg_preview1;
+            this.pictureBox1.Location = new System.Drawing.Point(240, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(275, 204);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
@@ -120,6 +131,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(247, 566);
             this.panel1.TabIndex = 4;
+            // 
+            // lblnmeProf
+            // 
+            this.lblnmeProf.BackColor = System.Drawing.Color.LightGray;
+            this.lblnmeProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnmeProf.Location = new System.Drawing.Point(94, 9);
+            this.lblnmeProf.Name = "lblnmeProf";
+            this.lblnmeProf.Size = new System.Drawing.Size(147, 45);
+            this.lblnmeProf.TabIndex = 5;
             // 
             // button1
             // 
@@ -211,26 +231,6 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : Hassan";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources.Wallet_by_back1design1_580x389_removebg_preview1;
-            this.pictureBox1.Location = new System.Drawing.Point(236, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 204);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblnmeProf
-            // 
-            this.lblnmeProf.BackColor = System.Drawing.Color.LightGray;
-            this.lblnmeProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnmeProf.Location = new System.Drawing.Point(94, 9);
-            this.lblnmeProf.Name = "lblnmeProf";
-            this.lblnmeProf.Size = new System.Drawing.Size(147, 45);
-            this.lblnmeProf.TabIndex = 5;
-            // 
             // formbalance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -241,9 +241,9 @@
             this.Name = "formbalance";
             this.Text = "formbalance";
             this.pnlMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlSidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -28,27 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label_1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSignup = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtName2 = new System.Windows.Forms.TextBox();
+            this.txtEmail2 = new System.Windows.Forms.TextBox();
+            this.txtPw2 = new System.Windows.Forms.TextBox();
+            this.txtDisab = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(280, 314);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(444, 33);
-            this.label1.TabIndex = 21;
             // 
             // label2
             // 
@@ -61,15 +52,6 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Password";
             // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(280, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(444, 33);
-            this.label4.TabIndex = 19;
-            // 
             // label_1
             // 
             this.label_1.AutoSize = true;
@@ -80,15 +62,6 @@
             this.label_1.Size = new System.Drawing.Size(65, 25);
             this.label_1.TabIndex = 18;
             this.label_1.Text = "Name";
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(280, 389);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(444, 33);
-            this.label3.TabIndex = 23;
             // 
             // label5
             // 
@@ -101,15 +74,6 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Disabilities";
             // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(280, 238);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(444, 33);
-            this.label6.TabIndex = 25;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -121,18 +85,18 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Email / Phone Number";
             // 
-            // button2
+            // btnSignup
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(426, 458);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 42);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "SIGN UP";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSignup.BackColor = System.Drawing.Color.SlateGray;
+            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSignup.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignup.ForeColor = System.Drawing.Color.White;
+            this.btnSignup.Location = new System.Drawing.Point(426, 458);
+            this.btnSignup.Name = "btnSignup";
+            this.btnSignup.Size = new System.Drawing.Size(157, 42);
+            this.btnSignup.TabIndex = 26;
+            this.btnSignup.Text = "SIGN UP";
+            this.btnSignup.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -144,20 +108,52 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // txtName2
+            // 
+            this.txtName2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName2.Location = new System.Drawing.Point(280, 166);
+            this.txtName2.Name = "txtName2";
+            this.txtName2.Size = new System.Drawing.Size(444, 34);
+            this.txtName2.TabIndex = 28;
+            // 
+            // txtEmail2
+            // 
+            this.txtEmail2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail2.Location = new System.Drawing.Point(280, 241);
+            this.txtEmail2.Name = "txtEmail2";
+            this.txtEmail2.Size = new System.Drawing.Size(444, 34);
+            this.txtEmail2.TabIndex = 29;
+            // 
+            // txtPw2
+            // 
+            this.txtPw2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPw2.Location = new System.Drawing.Point(280, 317);
+            this.txtPw2.Name = "txtPw2";
+            this.txtPw2.Size = new System.Drawing.Size(444, 34);
+            this.txtPw2.TabIndex = 30;
+            // 
+            // txtDisab
+            // 
+            this.txtDisab.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisab.Location = new System.Drawing.Point(280, 392);
+            this.txtDisab.Name = "txtDisab";
+            this.txtDisab.Size = new System.Drawing.Size(444, 34);
+            this.txtDisab.TabIndex = 31;
+            // 
             // formsignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(994, 566);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtDisab);
+            this.Controls.Add(this.txtPw2);
+            this.Controls.Add(this.txtEmail2);
+            this.Controls.Add(this.txtName2);
+            this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label_1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "formsignup";
@@ -169,16 +165,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label_1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtName2;
+        private System.Windows.Forms.TextBox txtEmail2;
+        private System.Windows.Forms.TextBox txtPw2;
+        private System.Windows.Forms.TextBox txtDisab;
     }
 }
