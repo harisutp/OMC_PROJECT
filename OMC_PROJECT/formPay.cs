@@ -17,9 +17,9 @@ namespace OMC_PROJECT
             InitializeComponent();
         }
 
-        private void btnRide_Click(object sender, EventArgs e)
+        private void lblNameD_Click(object sender, EventArgs e)
         {
-  
+
         }
     }
 }

@@ -19,7 +19,23 @@ namespace OMC_PROJECT
 
         private void lblReceipt_Click(object sender, EventArgs e)
         {
-            //ANA
+            lblReceipt.Text =
+                "=========================================\n" +
+                "            OFFICIAL RECEIPT             \n" +
+                "=========================================\n\n" +
+                //$"Date : {DateTime.Now.ToString(MM / dd / yyyy HH: mm)}\n\n" +
+                //$"Driver Name : {driverName}\n" +
+                //$"Car Model : {carModel}\n" +
+                //$"Plate No:  {plateNumber}\n" +
+                "=========================================\n" +
+               // $"TOTAL FEES : {fees}\n\n" +
+                "=========================================\n" +
+                "      Thank You for riding MoveAble!" +
+                "=========================================\n";
+
+
+
+                
         }
     }
 }
