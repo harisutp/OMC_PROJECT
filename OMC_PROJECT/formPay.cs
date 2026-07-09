@@ -16,5 +16,10 @@ namespace OMC_PROJECT
         {
             InitializeComponent();
         }
+
+        private void lblNameD_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
