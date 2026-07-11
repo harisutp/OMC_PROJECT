@@ -35,13 +35,18 @@
             this.lblName = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtPickup = new System.Windows.Forms.TextBox();
+            this.btnMap = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btnNext = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.cboPhar = new System.Windows.Forms.ComboBox();
             this.cboSuperM = new System.Windows.Forms.ComboBox();
             this.cboHosp = new System.Windows.Forms.ComboBox();
-            this.cboLoc = new System.Windows.Forms.ComboBox();
             this.cboRegion = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.cboTown = new System.Windows.Forms.ComboBox();
@@ -51,13 +56,6 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.btnMap = new System.Windows.Forms.Button();
-            this.txtPickup = new System.Windows.Forms.TextBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlSidebar.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSidebar
@@ -159,11 +156,9 @@
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.cboPhar);
             this.panel1.Controls.Add(this.cboSuperM);
             this.panel1.Controls.Add(this.cboHosp);
-            this.panel1.Controls.Add(this.cboLoc);
             this.panel1.Controls.Add(this.cboRegion);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -172,12 +167,31 @@
             this.panel1.Size = new System.Drawing.Size(840, 708);
             this.panel1.TabIndex = 5;
             // 
+            // txtPickup
+            // 
+            this.txtPickup.Location = new System.Drawing.Point(182, 165);
+            this.txtPickup.Multiline = true;
+            this.txtPickup.Name = "txtPickup";
+            this.txtPickup.Size = new System.Drawing.Size(484, 137);
+            this.txtPickup.TabIndex = 33;
+            // 
+            // btnMap
+            // 
+            this.btnMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMap.Location = new System.Drawing.Point(271, 72);
+            this.btnMap.Name = "btnMap";
+            this.btnMap.Size = new System.Drawing.Size(183, 44);
+            this.btnMap.TabIndex = 32;
+            this.btnMap.Text = "CHOOSE ON MAP";
+            this.btnMap.UseVisualStyleBackColor = true;
+            this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(271, 58);
+            this.label1.Location = new System.Drawing.Point(178, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 22);
             this.label1.TabIndex = 31;
@@ -187,11 +201,22 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl1.Location = new System.Drawing.Point(178, 78);
+            this.lbl1.Location = new System.Drawing.Point(178, 84);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(87, 20);
             this.lbl1.TabIndex = 30;
             this.lbl1.Text = "Pick up at?";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::OMC_PROJECT.Properties.Resources.IMG_0931;
+            this.pictureBox9.Location = new System.Drawing.Point(50, 111);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 29;
+            this.pictureBox9.TabStop = false;
             // 
             // btnNext
             // 
@@ -207,6 +232,39 @@
             this.btnNext.Text = "NEXT";
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::OMC_PROJECT.Properties.Resources.cropped_circle_image;
+            this.pictureBox8.Location = new System.Drawing.Point(50, 526);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 16;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::OMC_PROJECT.Properties.Resources.IMG_0930;
+            this.pictureBox7.Location = new System.Drawing.Point(50, 407);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::OMC_PROJECT.Properties.Resources.IMG_0933;
+            this.pictureBox6.Location = new System.Drawing.Point(50, 302);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
             // 
             // cboPhar
             // 
@@ -253,17 +311,6 @@
             this.cboHosp.Size = new System.Drawing.Size(498, 35);
             this.cboHosp.TabIndex = 10;
             this.cboHosp.Text = "( PICK A HOSPITAL )";
-            // 
-            // cboLoc
-            // 
-            this.cboLoc.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboLoc.FormattingEnabled = true;
-            this.cboLoc.Location = new System.Drawing.Point(182, 224);
-            this.cboLoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboLoc.Name = "cboLoc";
-            this.cboLoc.Size = new System.Drawing.Size(498, 35);
-            this.cboLoc.TabIndex = 9;
-            this.cboLoc.Text = "( PICK A LOCATION )";
             // 
             // cboRegion
             // 
@@ -327,7 +374,7 @@
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(163, 340);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(482, 35);
+            this.comboBox5.Size = new System.Drawing.Size(482, 36);
             this.comboBox5.TabIndex = 4;
             // 
             // comboBox7
@@ -345,80 +392,6 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(482, 28);
             this.comboBox3.TabIndex = 7;
-            // 
-            // btnMap
-            // 
-            this.btnMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMap.Location = new System.Drawing.Point(182, 113);
-            this.btnMap.Name = "btnMap";
-            this.btnMap.Size = new System.Drawing.Size(83, 68);
-            this.btnMap.TabIndex = 32;
-            this.btnMap.Text = "CHOOSE ON MAP";
-            this.btnMap.UseVisualStyleBackColor = true;
-            this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
-            // 
-            // txtPickup
-            // 
-            this.txtPickup.Location = new System.Drawing.Point(275, 87);
-            this.txtPickup.Multiline = true;
-            this.txtPickup.Name = "txtPickup";
-            this.txtPickup.Size = new System.Drawing.Size(405, 115);
-            this.txtPickup.TabIndex = 33;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::OMC_PROJECT.Properties.Resources.IMG_0931;
-            this.pictureBox9.Location = new System.Drawing.Point(50, 52);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 29;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::OMC_PROJECT.Properties.Resources.cropped_circle_image;
-            this.pictureBox8.Location = new System.Drawing.Point(50, 526);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 16;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::OMC_PROJECT.Properties.Resources.IMG_0930;
-            this.pictureBox7.Location = new System.Drawing.Point(50, 407);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::OMC_PROJECT.Properties.Resources.IMG_0933;
-            this.pictureBox6.Location = new System.Drawing.Point(50, 302);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::OMC_PROJECT.Properties.Resources.IMG_0931;
-            this.pictureBox5.Location = new System.Drawing.Point(50, 188);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
             // 
             // formLetsRide
             // 
@@ -439,7 +412,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -470,12 +442,10 @@
         private System.Windows.Forms.ComboBox cboPhar;
         private System.Windows.Forms.ComboBox cboSuperM;
         private System.Windows.Forms.ComboBox cboHosp;
-        private System.Windows.Forms.ComboBox cboLoc;
         private System.Windows.Forms.ComboBox cboRegion;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.PictureBox pictureBox9;
