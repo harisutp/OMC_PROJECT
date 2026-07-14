@@ -41,7 +41,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtPw = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +79,7 @@
             this.btnSignup2.TabIndex = 9;
             this.btnSignup2.Text = "SIGN UP";
             this.btnSignup2.UseVisualStyleBackColor = false;
+            this.btnSignup2.Click += new System.EventHandler(this.btnSignup2_Click);
             // 
             // btnLogin
             // 
@@ -92,6 +93,7 @@
             this.btnLogin.TabIndex = 10;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label3
             // 
@@ -191,13 +193,13 @@
             this.txtEmail.Size = new System.Drawing.Size(444, 34);
             this.txtEmail.TabIndex = 29;
             // 
-            // txtPw
+            // txtPassword
             // 
-            this.txtPw.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPw.Location = new System.Drawing.Point(273, 351);
-            this.txtPw.Name = "txtPw";
-            this.txtPw.Size = new System.Drawing.Size(444, 34);
-            this.txtPw.TabIndex = 30;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(273, 351);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(444, 34);
+            this.txtPassword.TabIndex = 30;
             // 
             // formlogin
             // 
@@ -205,7 +207,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(994, 566);
-            this.Controls.Add(this.txtPw);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -241,6 +243,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtPw;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }

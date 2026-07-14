@@ -30,5 +30,29 @@ namespace OMC_PROJECT
             form2.Show();
             this.Hide();
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            formPay formpay = new formPay();
+            formpay.Show();
+            this.Hide();
+        }
+
+        private void btnMap_Click(object sender, EventArgs e)
+        {
+            MapForm map = new MapForm();
+
+            if (map.ShowDialog() == DialogResult.OK)
+            {
+                txtPickup.Text = map.SelectedAddress;
+            }
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            formprofile formprofile = new formprofile();
+            formprofile.Show();
+            this.Hide();
+        }
     }
     }
