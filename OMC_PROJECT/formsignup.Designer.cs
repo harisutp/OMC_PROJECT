@@ -36,7 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtName2 = new System.Windows.Forms.TextBox();
             this.txtEmail2 = new System.Windows.Forms.TextBox();
-            this.txtPw2 = new System.Windows.Forms.TextBox();
+            this.txtPassword2 = new System.Windows.Forms.TextBox();
             this.txtDisab = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +97,7 @@
             this.btnSignup.TabIndex = 26;
             this.btnSignup.Text = "SIGN UP";
             this.btnSignup.UseVisualStyleBackColor = false;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // pictureBox1
             // 
@@ -115,6 +116,7 @@
             this.txtName2.Name = "txtName2";
             this.txtName2.Size = new System.Drawing.Size(444, 34);
             this.txtName2.TabIndex = 28;
+            this.txtName2.TextChanged += new System.EventHandler(this.txtName2_TextChanged);
             // 
             // txtEmail2
             // 
@@ -124,13 +126,13 @@
             this.txtEmail2.Size = new System.Drawing.Size(444, 34);
             this.txtEmail2.TabIndex = 29;
             // 
-            // txtPw2
+            // txtPassword2
             // 
-            this.txtPw2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPw2.Location = new System.Drawing.Point(280, 317);
-            this.txtPw2.Name = "txtPw2";
-            this.txtPw2.Size = new System.Drawing.Size(444, 34);
-            this.txtPw2.TabIndex = 30;
+            this.txtPassword2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword2.Location = new System.Drawing.Point(280, 317);
+            this.txtPassword2.Name = "txtPassword2";
+            this.txtPassword2.Size = new System.Drawing.Size(444, 34);
+            this.txtPassword2.TabIndex = 30;
             // 
             // txtDisab
             // 
@@ -147,7 +149,7 @@
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(994, 566);
             this.Controls.Add(this.txtDisab);
-            this.Controls.Add(this.txtPw2);
+            this.Controls.Add(this.txtPassword2);
             this.Controls.Add(this.txtEmail2);
             this.Controls.Add(this.txtName2);
             this.Controls.Add(this.btnSignup);
@@ -173,7 +175,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtName2;
         private System.Windows.Forms.TextBox txtEmail2;
-        private System.Windows.Forms.TextBox txtPw2;
+        private System.Windows.Forms.TextBox txtPassword2;
         private System.Windows.Forms.TextBox txtDisab;
     }
 }

@@ -298,6 +298,7 @@
             this.btnRide.TabIndex = 1;
             this.btnRide.Text = "LET\'S RIDE";
             this.btnRide.UseVisualStyleBackColor = false;
+            this.btnRide.Click += new System.EventHandler(this.btnRide_Click);
             // 
             // lblName
             // 
