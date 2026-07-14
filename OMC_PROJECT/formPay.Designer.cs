@@ -92,6 +92,7 @@
             this.btnBook.TabIndex = 28;
             this.btnBook.Text = "BOOK";
             this.btnBook.UseVisualStyleBackColor = false;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // panel2
             // 

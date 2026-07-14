@@ -16,5 +16,10 @@ namespace OMC_PROJECT
         {
             InitializeComponent();
         }
+
+        private void btnBook_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Booking successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
