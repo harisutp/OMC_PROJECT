@@ -65,7 +65,7 @@
             this.pnlMain.Controls.Add(this.cboState);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(185, 0);
-            this.pnlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(561, 460);
             this.pnlMain.TabIndex = 3;
@@ -77,7 +77,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(561, 460);
             this.panel1.TabIndex = 5;
@@ -89,7 +89,7 @@
             this.btnBook.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBook.ForeColor = System.Drawing.Color.White;
             this.btnBook.Location = new System.Drawing.Point(218, 373);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBook.Margin = new System.Windows.Forms.Padding(2);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(118, 34);
             this.btnBook.TabIndex = 28;
@@ -111,7 +111,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(77, 78);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(414, 261);
             this.panel2.TabIndex = 0;
@@ -128,10 +128,10 @@
             // lblPlateD
             // 
             this.lblPlateD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPlateD.Location = new System.Drawing.Point(137, 146);
+            this.lblPlateD.Location = new System.Drawing.Point(144, 146);
             this.lblPlateD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlateD.Name = "lblPlateD";
-            this.lblPlateD.Size = new System.Drawing.Size(259, 27);
+            this.lblPlateD.Size = new System.Drawing.Size(252, 27);
             this.lblPlateD.TabIndex = 7;
             // 
             // lblCarD
@@ -146,10 +146,10 @@
             // lblNameD
             // 
             this.lblNameD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNameD.Location = new System.Drawing.Point(67, 55);
+            this.lblNameD.Location = new System.Drawing.Point(77, 55);
             this.lblNameD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNameD.Name = "lblNameD";
-            this.lblNameD.Size = new System.Drawing.Size(330, 27);
+            this.lblNameD.Size = new System.Drawing.Size(320, 27);
             this.lblNameD.TabIndex = 5;
             this.lblNameD.Click += new System.EventHandler(this.lblNameD_Click);
             // 
@@ -213,7 +213,7 @@
             // 
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(122, 122);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(380, 21);
             this.comboBox6.TabIndex = 4;
@@ -222,7 +222,7 @@
             // 
             this.cboTown.FormattingEnabled = true;
             this.cboTown.Location = new System.Drawing.Point(122, 34);
-            this.cboTown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTown.Margin = new System.Windows.Forms.Padding(2);
             this.cboTown.Name = "cboTown";
             this.cboTown.Size = new System.Drawing.Size(333, 21);
             this.cboTown.TabIndex = 3;
@@ -231,7 +231,7 @@
             // 
             this.cboState.FormattingEnabled = true;
             this.cboState.Location = new System.Drawing.Point(122, 10);
-            this.cboState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboState.Margin = new System.Windows.Forms.Padding(2);
             this.cboState.Name = "cboState";
             this.cboState.Size = new System.Drawing.Size(333, 21);
             this.cboState.TabIndex = 0;
@@ -246,7 +246,7 @@
             this.pnlSidebar.Controls.Add(this.lblName);
             this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(185, 460);
             this.pnlSidebar.TabIndex = 2;
@@ -267,7 +267,7 @@
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.Location = new System.Drawing.Point(0, 214);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(185, 73);
             this.btnProfile.TabIndex = 3;
@@ -280,7 +280,7 @@
             this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBalance.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBalance.Location = new System.Drawing.Point(0, 136);
-            this.btnBalance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBalance.Margin = new System.Windows.Forms.Padding(2);
             this.btnBalance.Name = "btnBalance";
             this.btnBalance.Size = new System.Drawing.Size(185, 73);
             this.btnBalance.TabIndex = 2;
@@ -293,7 +293,7 @@
             this.btnRide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRide.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRide.Location = new System.Drawing.Point(0, 58);
-            this.btnRide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRide.Margin = new System.Windows.Forms.Padding(2);
             this.btnRide.Name = "btnRide";
             this.btnRide.Size = new System.Drawing.Size(185, 73);
             this.btnRide.TabIndex = 1;
@@ -318,7 +318,7 @@
             this.ClientSize = new System.Drawing.Size(746, 460);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formPay";
             this.Text = "formPay";
             this.pnlMain.ResumeLayout(false);
