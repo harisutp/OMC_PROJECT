@@ -37,14 +37,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtDriverPassword = new System.Windows.Forms.TextBox();
+            this.txtDriverEmail = new System.Windows.Forms.TextBox();
+            this.txtDriverName = new System.Windows.Forms.TextBox();
+            this.btnDriverSignUp = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCarType = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -142,42 +142,42 @@
             this.label_1.TabIndex = 32;
             this.label_1.Text = "Name";
             // 
-            // textBox2
+            // txtDriverPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(366, 360);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(485, 34);
-            this.textBox2.TabIndex = 50;
+            this.txtDriverPassword.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDriverPassword.Location = new System.Drawing.Point(366, 360);
+            this.txtDriverPassword.Name = "txtDriverPassword";
+            this.txtDriverPassword.Size = new System.Drawing.Size(485, 34);
+            this.txtDriverPassword.TabIndex = 50;
             // 
-            // textBox3
+            // txtDriverEmail
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(366, 284);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(485, 34);
-            this.textBox3.TabIndex = 49;
+            this.txtDriverEmail.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDriverEmail.Location = new System.Drawing.Point(366, 284);
+            this.txtDriverEmail.Name = "txtDriverEmail";
+            this.txtDriverEmail.Size = new System.Drawing.Size(485, 34);
+            this.txtDriverEmail.TabIndex = 49;
             // 
-            // textBox4
+            // txtDriverName
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(366, 209);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(485, 34);
-            this.textBox4.TabIndex = 48;
+            this.txtDriverName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDriverName.Location = new System.Drawing.Point(366, 209);
+            this.txtDriverName.Name = "txtDriverName";
+            this.txtDriverName.Size = new System.Drawing.Size(485, 34);
+            this.txtDriverName.TabIndex = 48;
             // 
-            // button2
+            // btnDriverSignUp
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(504, 558);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 42);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "SIGN UP";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnDriverSignUp.BackColor = System.Drawing.Color.SlateGray;
+            this.btnDriverSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDriverSignUp.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDriverSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnDriverSignUp.Location = new System.Drawing.Point(504, 558);
+            this.btnDriverSignUp.Name = "btnDriverSignUp";
+            this.btnDriverSignUp.Size = new System.Drawing.Size(198, 42);
+            this.btnDriverSignUp.TabIndex = 46;
+            this.btnDriverSignUp.Text = "SIGN UP";
+            this.btnDriverSignUp.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -212,13 +212,13 @@
             this.label6.TabIndex = 42;
             this.label6.Text = "Name";
             // 
-            // textBox1
+            // txtCarType
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(366, 447);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(485, 34);
-            this.textBox1.TabIndex = 52;
+            this.txtCarType.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarType.Location = new System.Drawing.Point(366, 447);
+            this.txtCarType.Name = "txtCarType";
+            this.txtCarType.Size = new System.Drawing.Size(485, 34);
+            this.txtCarType.TabIndex = 52;
             // 
             // label3
             // 
@@ -234,7 +234,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources._6219616955832930781_removebg_preview__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(175, 53);
+            this.pictureBox1.Location = new System.Drawing.Point(177, 53);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(898, 547);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -245,7 +245,7 @@
             // 
             this.label8.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(479, 19);
+            this.label8.Location = new System.Drawing.Point(497, 21);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 80);
             this.label8.TabIndex = 54;
@@ -256,7 +256,7 @@
             // 
             this.label9.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(584, 19);
+            this.label9.Location = new System.Drawing.Point(602, 21);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(163, 80);
             this.label9.TabIndex = 55;
@@ -282,12 +282,12 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCarType);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtDriverPassword);
+            this.Controls.Add(this.txtDriverEmail);
+            this.Controls.Add(this.txtDriverName);
+            this.Controls.Add(this.btnDriverSignUp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
@@ -320,14 +320,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtDriverPassword;
+        private System.Windows.Forms.TextBox txtDriverEmail;
+        private System.Windows.Forms.TextBox txtDriverName;
+        private System.Windows.Forms.Button btnDriverSignUp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCarType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
