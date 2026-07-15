@@ -24,11 +24,11 @@ namespace OMC_PROJECT
                 "            OFFICIAL RECEIPT             \n" +
                 "=========================================\n\n" +
                 $"Date : {DateTime.Now.ToString("MM/dd/yyyy HH:mm")}\n\n" +
-                $"Driver Name : {lblNameD}\n" +
-                $"Car Model : {lblCarD}\n" +
-                $"Plate No:  {lblPlateD}\n" +
+                $"Driver Name : {lblNameD.Text}\n" +
+                $"Car Model : {lblCarD.Text}\n" +
+                $"Plate No:  {lblPlateD.Text}\n" +
                 "=========================================\n" +
-                $"TOTAL FEES : {lblFees}\n\n" +
+                $"TOTAL FEES : {lblFees.Text}\n\n" +
                 "=========================================\n" +
                 "      Thank You for riding MoveAble!" +
                 "=========================================\n";

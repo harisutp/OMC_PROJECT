@@ -31,6 +31,10 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblReceipt = new System.Windows.Forms.Label();
+            this.lblNameD = new System.Windows.Forms.Label();
+            this.lblCarD = new System.Windows.Forms.Label();
+            this.lblPlateD = new System.Windows.Forms.Label();
+            this.lblFees = new System.Windows.Forms.Label();
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblnmeProf = new System.Windows.Forms.Label();
@@ -52,6 +56,10 @@
             this.pnlMain.BackColor = System.Drawing.Color.DarkBlue;
             this.pnlMain.Controls.Add(this.label1);
             this.pnlMain.Controls.Add(this.lblReceipt);
+            this.pnlMain.Controls.Add(this.lblNameD);
+            this.pnlMain.Controls.Add(this.lblCarD);
+            this.pnlMain.Controls.Add(this.lblPlateD);
+            this.pnlMain.Controls.Add(this.lblFees);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(185, 0);
             this.pnlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -81,6 +89,46 @@
             this.lblReceipt.Size = new System.Drawing.Size(269, 339);
             this.lblReceipt.TabIndex = 0;
             this.lblReceipt.Click += new System.EventHandler(this.lblReceipt_Click);
+            // 
+            // lblNameD
+            // 
+            this.lblNameD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblNameD.Location = new System.Drawing.Point(10, 10);
+            this.lblNameD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNameD.Name = "lblNameD";
+            this.lblNameD.Size = new System.Drawing.Size(10, 10);
+            this.lblNameD.TabIndex = 2;
+            this.lblNameD.Visible = false;
+            // 
+            // lblCarD
+            // 
+            this.lblCarD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCarD.Location = new System.Drawing.Point(10, 26);
+            this.lblCarD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCarD.Name = "lblCarD";
+            this.lblCarD.Size = new System.Drawing.Size(10, 10);
+            this.lblCarD.TabIndex = 3;
+            this.lblCarD.Visible = false;
+            // 
+            // lblPlateD
+            // 
+            this.lblPlateD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPlateD.Location = new System.Drawing.Point(10, 42);
+            this.lblPlateD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlateD.Name = "lblPlateD";
+            this.lblPlateD.Size = new System.Drawing.Size(10, 10);
+            this.lblPlateD.TabIndex = 4;
+            this.lblPlateD.Visible = false;
+            // 
+            // lblFees
+            // 
+            this.lblFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblFees.Location = new System.Drawing.Point(10, 58);
+            this.lblFees.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFees.Name = "lblFees";
+            this.lblFees.Size = new System.Drawing.Size(10, 10);
+            this.lblFees.TabIndex = 5;
+            this.lblFees.Visible = false;
             // 
             // pnlSidebar
             // 
@@ -253,6 +301,10 @@
         private System.Windows.Forms.Button btnRide;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblReceipt;
+        public System.Windows.Forms.Label lblNameD;
+        public System.Windows.Forms.Label lblCarD;
+        public System.Windows.Forms.Label lblPlateD;
+        public System.Windows.Forms.Label lblFees;
         private System.Windows.Forms.Label label1;
     }
 }
