@@ -64,6 +64,7 @@
             this.pnlMain.Location = new System.Drawing.Point(247, 0);
             this.pnlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(623, 498);
             this.pnlMain.Size = new System.Drawing.Size(830, 613);
             this.pnlMain.TabIndex = 5;
             // 
@@ -91,40 +92,40 @@
             // lblNameD
             // 
             this.lblNameD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNameD.Location = new System.Drawing.Point(10, 10);
+            this.lblNameD.Location = new System.Drawing.Point(8, 8);
             this.lblNameD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNameD.Name = "lblNameD";
-            this.lblNameD.Size = new System.Drawing.Size(10, 10);
+            this.lblNameD.Size = new System.Drawing.Size(8, 8);
             this.lblNameD.TabIndex = 2;
             this.lblNameD.Visible = false;
             // 
             // lblCarD
             // 
             this.lblCarD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCarD.Location = new System.Drawing.Point(10, 26);
+            this.lblCarD.Location = new System.Drawing.Point(8, 21);
             this.lblCarD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCarD.Name = "lblCarD";
-            this.lblCarD.Size = new System.Drawing.Size(10, 10);
+            this.lblCarD.Size = new System.Drawing.Size(8, 8);
             this.lblCarD.TabIndex = 3;
             this.lblCarD.Visible = false;
             // 
             // lblPlateD
             // 
             this.lblPlateD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPlateD.Location = new System.Drawing.Point(10, 42);
+            this.lblPlateD.Location = new System.Drawing.Point(8, 34);
             this.lblPlateD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlateD.Name = "lblPlateD";
-            this.lblPlateD.Size = new System.Drawing.Size(10, 10);
+            this.lblPlateD.Size = new System.Drawing.Size(8, 8);
             this.lblPlateD.TabIndex = 4;
             this.lblPlateD.Visible = false;
             // 
             // lblFees
             // 
             this.lblFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblFees.Location = new System.Drawing.Point(10, 58);
+            this.lblFees.Location = new System.Drawing.Point(8, 47);
             this.lblFees.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFees.Name = "lblFees";
-            this.lblFees.Size = new System.Drawing.Size(10, 10);
+            this.lblFees.Size = new System.Drawing.Size(8, 8);
             this.lblFees.TabIndex = 5;
             this.lblFees.Visible = false;
             // 
@@ -140,6 +141,7 @@
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(185, 498);
             this.pnlSidebar.Size = new System.Drawing.Size(247, 613);
             this.pnlSidebar.TabIndex = 4;
             // 
@@ -155,6 +157,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(185, 498);
             this.panel1.Size = new System.Drawing.Size(247, 613);
             this.panel1.TabIndex = 4;
             // 
@@ -267,6 +270,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(808, 498);
+            this.Controls.Add(this.pnlMain);
+            this.Controls.Add(this.pnlSidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ClientSize = new System.Drawing.Size(1077, 613);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
