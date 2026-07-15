@@ -26,5 +26,21 @@ namespace OMC_PROJECT
         {
             //hii
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            formbalance secondForm = new formbalance();
+
+
+            secondForm.Show();
+
+
+            this.Hide();
+        }
     }
 }
