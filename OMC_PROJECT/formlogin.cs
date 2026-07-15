@@ -56,10 +56,10 @@ namespace OMC_PROJECT
 
             Session.CurrentUser = user;
 
-            var balanceForm = new formLetsRide();
-            balanceForm.FormClosed += (s2, e2) => Close();
+            var formLetsRide = new formLetsRide();
+            formLetsRide.FormClosed += (s2, e2) => Close();
             Hide();
-            balanceForm.Show();
+            formLetsRide.Show();
 
         }
 
