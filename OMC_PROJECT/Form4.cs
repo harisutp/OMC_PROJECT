@@ -10,27 +10,26 @@ using System.Windows.Forms;
 
 namespace OMC_PROJECT
 {
-    public partial class formbalance : Form
+    public partial class Form4 : Form
     {
-        public formbalance()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
-           
+
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            formbank secondForm = new formbank();
 
+        }
 
-            secondForm.Show();
+        private void label8_Click(object sender, EventArgs e)
+        {
 
-
-            this.Hide();
         }
     }
 }
