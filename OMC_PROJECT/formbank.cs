@@ -21,5 +21,10 @@ namespace OMC_PROJECT
         {
 
         }
+
+        private void formbank_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -163,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.Name = "formbank";
             this.Text = resources.GetString("$this.Text");
+            this.Load += new System.EventHandler(this.formbank_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
