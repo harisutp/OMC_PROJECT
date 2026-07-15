@@ -13,6 +13,8 @@ namespace OMC_PROJECT
 {
     public partial class formlogin : Form
     {
+        public object UserStore { get; private set; }
+
         public formlogin()
         {
             InitializeComponent();
@@ -46,7 +48,7 @@ namespace OMC_PROJECT
             }
 
            
-            if (!UserStore.TryLogin(email, password, out var user, out string error))
+            if (UserStore.TryLogin(email, password, out var user, out string error))
             {
                 MessageBox.Show(error, "Login failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPassword.Clear();

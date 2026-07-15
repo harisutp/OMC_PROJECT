@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OMC_PROJECT.OMC_PROJECT;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,7 @@ namespace OMC_PROJECT
             string password = txtPassword2.Text;
             string disabilities = txtDisab.Text.Trim();
 
-            if (!UserStore.TryRegister(name, email, password, disabilities, out string error))
+            if (UserStore.TryRegister(name, email, password, disabilities, out string error))
             {
                 MessageBox.Show(error, "Sign up failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

@@ -27,5 +27,14 @@ namespace OMC_PROJECT
             
             this.Hide();
         }
+
+        private void formbalance_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    internal class formbank
+    {
     }
 }

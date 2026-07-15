@@ -160,6 +160,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(747, 566);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtPickup
             // 
@@ -387,7 +388,7 @@
             this.Controls.Add(this.pnlSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "formLetsRide";
-            this.Text = "Form1";
+            this.Text = "formLetsRide";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
