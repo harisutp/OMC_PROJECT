@@ -19,12 +19,17 @@ namespace OMC_PROJECT
 
         private void label4_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
             formbank secondForm = new formbank();
 
-            
+
             secondForm.Show();
 
-            
+
             this.Hide();
         }
 
