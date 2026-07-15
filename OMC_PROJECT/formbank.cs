@@ -34,10 +34,10 @@ namespace OMC_PROJECT
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            formbalance secondForm = new formbalance();
+            formbalance firstForm = new formbalance();
 
 
-            secondForm.Show();
+            firstForm.Show();
 
 
             this.Hide();
