@@ -71,5 +71,10 @@ namespace OMC_PROJECT
             signup.Show();
 
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

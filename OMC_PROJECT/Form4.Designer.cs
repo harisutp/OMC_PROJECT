@@ -1,6 +1,6 @@
 ﻿namespace OMC_PROJECT
 {
-    partial class Form4
+    partial class FormDriver
     {
         /// <summary>
         /// Required designer variable.
@@ -157,6 +157,7 @@
             this.txtDriverEmail.Name = "txtDriverEmail";
             this.txtDriverEmail.Size = new System.Drawing.Size(485, 34);
             this.txtDriverEmail.TabIndex = 49;
+            this.txtDriverEmail.TextChanged += new System.EventHandler(this.txtDriverEmail_TextChanged);
             // 
             // txtDriverName
             // 
@@ -273,7 +274,7 @@
             this.label10.TabIndex = 56;
             this.label10.Text = "Driver Sign In";
             // 
-            // Form4
+            // FormDriver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -301,7 +302,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form4";
+            this.Name = "FormDriver";
             this.Text = "formDriverSignIn";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
