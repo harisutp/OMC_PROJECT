@@ -21,5 +21,21 @@ namespace OMC_PROJECT
         {
 
         }
+
+        private void formbank_Load(object sender, EventArgs e)
+        {
+            //hii
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Hide();
+        }
     }
 }
