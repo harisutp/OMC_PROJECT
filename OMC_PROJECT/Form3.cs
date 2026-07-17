@@ -42,8 +42,8 @@ namespace OMC_PROJECT
         {
             timersplash.Stop();
 
-            formlogin form2 = new formlogin();
-            form2.Show();
+            var frm = new formLetsRide();
+            frm.Show();
             this.Hide();
         }
     }

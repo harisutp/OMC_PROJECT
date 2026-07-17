@@ -32,6 +32,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.lblBalance = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblnmeProf = new System.Windows.Forms.Label();
@@ -43,11 +44,11 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMain
@@ -62,6 +63,7 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(747, 566);
             this.pnlMain.TabIndex = 5;
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
             // button4
             // 
@@ -72,16 +74,19 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "RELOAD";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // lblBalance
             // 
             this.lblBalance.BackColor = System.Drawing.Color.White;
             this.lblBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBalance.Location = new System.Drawing.Point(210, 345);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Size = new System.Drawing.Size(333, 85);
             this.lblBalance.TabIndex = 5;
+            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblBalance.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
@@ -93,6 +98,17 @@
             this.label1.Size = new System.Drawing.Size(360, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "YOUR BALANCE IS :";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources.Wallet_by_back1design1_580x389_removebg_preview1;
+            this.pictureBox1.Location = new System.Drawing.Point(240, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(275, 204);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // pnlSidebar
             // 
@@ -111,6 +127,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.lblName2);
             this.panel1.Controls.Add(this.lblnmeProf);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
@@ -142,6 +159,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "PROFILE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -166,6 +184,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "LET\'S RIDE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -221,16 +240,13 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : Hassan";
             // 
-            // pictureBox1
+            // lblName2
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkBlue;
-            this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources.Wallet_by_back1design1_580x389_removebg_preview1;
-            this.pictureBox1.Location = new System.Drawing.Point(240, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 204);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(94, 9);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(142, 54);
+            this.lblName2.TabIndex = 6;
             // 
             // formbalance
             // 
@@ -241,10 +257,11 @@
             this.Controls.Add(this.pnlSidebar);
             this.Name = "formbalance";
             this.Text = "formbalance";
+            this.Load += new System.EventHandler(this.formbalance_Load);
             this.pnlMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlSidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,5 +284,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblnmeProf;
+        private System.Windows.Forms.Label lblName2;
     }
 }

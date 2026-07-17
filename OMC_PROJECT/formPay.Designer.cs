@@ -50,6 +50,7 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -67,7 +68,7 @@
             this.pnlMain.Location = new System.Drawing.Point(247, 0);
             this.pnlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(851, 587);
+            this.pnlMain.Size = new System.Drawing.Size(747, 566);
             this.pnlMain.TabIndex = 3;
             // 
             // panel1
@@ -79,7 +80,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(851, 587);
+            this.panel1.Size = new System.Drawing.Size(747, 566);
             this.panel1.TabIndex = 5;
             // 
             // btnBook
@@ -88,7 +89,7 @@
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBook.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBook.ForeColor = System.Drawing.Color.White;
-            this.btnBook.Location = new System.Drawing.Point(291, 459);
+            this.btnBook.Location = new System.Drawing.Point(303, 456);
             this.btnBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(157, 42);
@@ -230,6 +231,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
+            this.pnlSidebar.Controls.Add(this.lblName2);
             this.pnlSidebar.Controls.Add(this.lblnmeProf);
             this.pnlSidebar.Controls.Add(this.btnProfile);
             this.pnlSidebar.Controls.Add(this.btnBalance);
@@ -239,7 +241,7 @@
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(247, 587);
+            this.pnlSidebar.Size = new System.Drawing.Size(247, 566);
             this.pnlSidebar.TabIndex = 2;
             // 
             // lblnmeProf
@@ -263,6 +265,7 @@
             this.btnProfile.TabIndex = 3;
             this.btnProfile.Text = "PROFILE";
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnBalance
             // 
@@ -276,6 +279,7 @@
             this.btnBalance.TabIndex = 2;
             this.btnBalance.Text = "BALANCE";
             this.btnBalance.UseVisualStyleBackColor = false;
+            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnRide
             // 
@@ -300,11 +304,19 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : ";
             // 
+            // lblName2
+            // 
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(88, 9);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(153, 54);
+            this.lblName2.TabIndex = 6;
+            // 
             // formPay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 587);
+            this.ClientSize = new System.Drawing.Size(994, 566);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -343,5 +355,6 @@
         private System.Windows.Forms.Label lblPlateD;
         private System.Windows.Forms.Label lblCarD;
         private System.Windows.Forms.Label lblNameD;
+        private System.Windows.Forms.Label lblName2;
     }
 }

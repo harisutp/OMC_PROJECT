@@ -111,7 +111,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(345, 493);
+            this.label5.Location = new System.Drawing.Point(340, 493);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 19);
             this.label5.TabIndex = 12;
@@ -121,7 +121,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 49.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(334, 88);
+            this.label6.Location = new System.Drawing.Point(329, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(216, 99);
             this.label6.TabIndex = 13;
@@ -132,7 +132,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("Bauhaus 93", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label7.Location = new System.Drawing.Point(252, 88);
+            this.label7.Location = new System.Drawing.Point(247, 88);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 114);
             this.label7.TabIndex = 14;
@@ -224,6 +224,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "formlogin";
             this.Text = "formlogin";
+            this.Load += new System.EventHandler(this.formlogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

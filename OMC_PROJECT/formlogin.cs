@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 using static System.Collections.Specialized.BitVector32;
 
 namespace OMC_PROJECT
@@ -16,6 +17,8 @@ namespace OMC_PROJECT
         public formlogin()
         {
             InitializeComponent();
+             //Temporary: show stack trace to find who creates this form at startup
+            //MessageBox.Show(new StackTrace().ToString(), "formlogin created by");
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -56,10 +59,10 @@ namespace OMC_PROJECT
 
             Session.CurrentUser = user;
 
-            var balanceForm = new formLetsRide();
-            balanceForm.FormClosed += (s2, e2) => Close();
+            var formLetsRide = new formLetsRide();
+            formLetsRide.FormClosed += (s2, e2) => Close();
             Hide();
-            balanceForm.Show();
+            formLetsRide.Show();
 
         }
 
@@ -72,9 +75,11 @@ namespace OMC_PROJECT
 
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void formlogin_Load(object sender, EventArgs e)
         {
 
         }
+
+       
     }
 }

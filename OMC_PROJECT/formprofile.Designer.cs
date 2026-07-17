@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.lblDisabP = new System.Windows.Forms.Label();
             this.lblEmailP = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSidebar.SuspendLayout();
@@ -72,6 +72,16 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(747, 566);
             this.pnlMain.TabIndex = 3;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(412, 490);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(106, 36);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.Text = "LOG OUT";
+            this.btnLogout.UseVisualStyleBackColor = true;
             // 
             // btnEdit
             // 
@@ -213,6 +223,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "BALANCE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -225,6 +236,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "LET\'S RIDE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -279,16 +291,6 @@
             this.lblName.Size = new System.Drawing.Size(165, 33);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : Hassan";
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(412, 490);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(106, 36);
-            this.btnLogout.TabIndex = 8;
-            this.btnLogout.Text = "LOG OUT";
-            this.btnLogout.UseVisualStyleBackColor = true;
             // 
             // formprofile
             // 
