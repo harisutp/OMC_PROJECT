@@ -21,7 +21,7 @@ namespace OMC_PROJECT
 
         private void btnRide_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Budu");
+            
         }
 
         private void btnBalance_Click(object sender, EventArgs e)
@@ -53,6 +53,11 @@ namespace OMC_PROJECT
             formprofile formprofile = new formprofile();
             formprofile.Show();
             this.Hide();
+        }
+
+        private void txtPickup_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }
