@@ -44,6 +44,7 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSidebar.SuspendLayout();
@@ -126,6 +127,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.lblName2);
             this.panel1.Controls.Add(this.lblnmeProf);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
@@ -157,6 +159,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "PROFILE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -181,6 +184,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "LET\'S RIDE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -236,6 +240,14 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : Hassan";
             // 
+            // lblName2
+            // 
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(94, 9);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(142, 54);
+            this.lblName2.TabIndex = 6;
+            // 
             // formbalance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -245,6 +257,7 @@
             this.Controls.Add(this.pnlSidebar);
             this.Name = "formbalance";
             this.Text = "formbalance";
+            this.Load += new System.EventHandler(this.formbalance_Load);
             this.pnlMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlSidebar.ResumeLayout(false);
@@ -271,5 +284,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblnmeProf;
+        private System.Windows.Forms.Label lblName2;
     }
 }

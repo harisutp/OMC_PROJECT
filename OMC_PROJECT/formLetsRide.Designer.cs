@@ -56,6 +56,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.pnlSidebar.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -68,6 +69,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
+            this.pnlSidebar.Controls.Add(this.lblName2);
             this.pnlSidebar.Controls.Add(this.btnProfile);
             this.pnlSidebar.Controls.Add(this.btnBalance);
             this.pnlSidebar.Controls.Add(this.btnRide);
@@ -77,6 +79,7 @@
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(247, 566);
             this.pnlSidebar.TabIndex = 0;
+            this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
             // 
             // btnProfile
             // 
@@ -160,6 +163,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(747, 566);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtPickup
             // 
@@ -313,6 +317,7 @@
             this.cboRegion.Size = new System.Drawing.Size(443, 32);
             this.cboRegion.TabIndex = 0;
             this.cboRegion.Text = "( REGION )";
+            this.cboRegion.SelectedIndexChanged += new System.EventHandler(this.cboRegion_SelectedIndexChanged);
             // 
             // comboBox6
             // 
@@ -379,6 +384,15 @@
             this.comboBox3.Size = new System.Drawing.Size(482, 24);
             this.comboBox3.TabIndex = 7;
             // 
+            // lblName2
+            // 
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(99, 10);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(142, 54);
+            this.lblName2.TabIndex = 4;
+            this.lblName2.Click += new System.EventHandler(this.lblName2_Click);
+            // 
             // formLetsRide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -439,6 +453,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMap;
         private System.Windows.Forms.TextBox txtPickup;
+        private System.Windows.Forms.Label lblName2;
     }
 }
 

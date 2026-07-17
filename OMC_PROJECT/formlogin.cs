@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 using static System.Collections.Specialized.BitVector32;
 
 namespace OMC_PROJECT
@@ -16,6 +17,8 @@ namespace OMC_PROJECT
         public formlogin()
         {
             InitializeComponent();
+             //Temporary: show stack trace to find who creates this form at startup
+            //MessageBox.Show(new StackTrace().ToString(), "formlogin created by");
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -71,5 +74,12 @@ namespace OMC_PROJECT
             signup.Show();
 
         }
+
+        private void formlogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

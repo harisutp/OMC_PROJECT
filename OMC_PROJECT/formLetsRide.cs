@@ -17,6 +17,15 @@ namespace OMC_PROJECT
             public formLetsRide()
             {
                 InitializeComponent();
+                // Show current user's name (if any) in the sidebar label
+                try
+                {
+                    lblName2.Text = Session.CurrentUser?.Name ?? string.Empty;
+                }
+                catch
+                {
+                    // ignore if label not available at design time
+                }
             }
 
         private void btnRide_Click(object sender, EventArgs e)
@@ -63,6 +72,26 @@ namespace OMC_PROJECT
         private void txtPickup_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cboRegion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlSidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblName2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     }
