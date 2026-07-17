@@ -80,10 +80,12 @@
             this.lblBalance.BackColor = System.Drawing.Color.White;
             this.lblBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBalance.Location = new System.Drawing.Point(210, 345);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Size = new System.Drawing.Size(333, 85);
             this.lblBalance.TabIndex = 5;
+            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblBalance.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
