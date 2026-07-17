@@ -56,5 +56,10 @@ namespace OMC_PROJECT
                 txtPickup.Text = map.SelectedAddress;
             }
         }
+
+        private void txtPickup_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
