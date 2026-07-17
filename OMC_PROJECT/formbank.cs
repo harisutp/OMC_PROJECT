@@ -34,12 +34,7 @@ namespace OMC_PROJECT
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            formbalance firstForm = new formbalance();
-
-
-            firstForm.Show();
-
-
+            this.DialogResult = DialogResult.OK;
             this.Hide();
         }
     }
