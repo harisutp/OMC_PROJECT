@@ -36,7 +36,6 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtPickup = new System.Windows.Forms.TextBox();
-            this.btnMap = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -56,6 +55,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btnMap = new System.Windows.Forms.Button();
             this.pnlSidebar.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -142,8 +142,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel1.Controls.Add(this.txtPickup);
             this.panel1.Controls.Add(this.btnMap);
+            this.panel1.Controls.Add(this.txtPickup);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbl1);
             this.panel1.Controls.Add(this.pictureBox9);
@@ -171,6 +171,8 @@
             this.txtPickup.TabIndex = 33;
             this.txtPickup.TextChanged += new System.EventHandler(this.txtPickup_TextChanged);
             // 
+<<<<<<< HEAD
+=======
             // btnMap
             // 
             this.btnMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,8 +184,9 @@
             this.btnMap.Text = "CHOOSE ON MAP";
             this.btnMap.UseVisualStyleBackColor = true;
             this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
-            this.btnMap.MouseEnter += new System.EventHandler(this.btnMap_Click);
+            
             // 
+>>>>>>> 4ffba63620435a644a8660ced7ee810bfbc4db07
             // label1
             // 
             this.label1.AutoSize = true;
@@ -379,6 +382,17 @@
             this.comboBox3.Size = new System.Drawing.Size(482, 24);
             this.comboBox3.TabIndex = 7;
             // 
+            // btnMap
+            // 
+            this.btnMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMap.Location = new System.Drawing.Point(286, 70);
+            this.btnMap.Name = "btnMap";
+            this.btnMap.Size = new System.Drawing.Size(202, 49);
+            this.btnMap.TabIndex = 34;
+            this.btnMap.Text = "CHOOSE ON MAP";
+            this.btnMap.UseVisualStyleBackColor = true;
+            this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
+            // 
             // formLetsRide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -386,10 +400,9 @@
             this.ClientSize = new System.Drawing.Size(994, 566);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formLetsRide";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
@@ -437,8 +450,8 @@
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnMap;
         private System.Windows.Forms.TextBox txtPickup;
+        private System.Windows.Forms.Button btnMap;
     }
 }
 
