@@ -47,6 +47,15 @@ namespace OMC_PROJECT
             this.Hide();
         }
 
+        
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            formprofile formprofile = new formprofile();
+            formprofile.Show();
+            this.Hide();
+        }
+
         private void btnMap_Click(object sender, EventArgs e)
         {
             MapForm map = new MapForm();
@@ -55,18 +64,6 @@ namespace OMC_PROJECT
             {
                 txtPickup.Text = map.SelectedAddress;
             }
-        }
-
-        private void btnMap_MouseEnter(object sender, EventArgs e)
-        {
-            btnMap.BackColor = Color.LightBlue;
-        }   
-
-        private void btnProfile_Click(object sender, EventArgs e)
-        {
-            formprofile formprofile = new formprofile();
-            formprofile.Show();
-            this.Hide();
         }
 
         private void txtPickup_TextChanged(object sender, EventArgs e)
