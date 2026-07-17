@@ -16,5 +16,19 @@ namespace OMC_PROJECT
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formLetsRide formLetsRide = new formLetsRide();
+            formLetsRide.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            formbalance formbalance = new formbalance();
+            formbalance.Show();
+            this.Hide();
+        }
     }
 }

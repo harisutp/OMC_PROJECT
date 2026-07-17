@@ -37,5 +37,20 @@ namespace OMC_PROJECT
             // Minimal handler: optionally show or open the ride form.
             // Keep as no-op to avoid altering navigation.
         }
+
+        private void btnBalance_Click(object sender, EventArgs e)
+        {
+            formbalance form2 = new formbalance();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            formprofile formprofile = new formprofile();
+            formprofile.Show();
+            this.Hide();
+
+        }
     }
 }
