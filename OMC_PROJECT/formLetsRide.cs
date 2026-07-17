@@ -48,6 +48,11 @@ namespace OMC_PROJECT
             }
         }
 
+        private void btnMap_MouseEnter(object sender, EventArgs e)
+        {
+            btnMap.BackColor = Color.LightBlue;
+        }   
+
         private void btnProfile_Click(object sender, EventArgs e)
         {
             formprofile formprofile = new formprofile();
