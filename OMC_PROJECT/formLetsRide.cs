@@ -59,5 +59,10 @@ namespace OMC_PROJECT
             formprofile.Show();
             this.Hide();
         }
+
+        private void txtPickup_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }

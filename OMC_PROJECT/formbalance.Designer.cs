@@ -30,7 +30,7 @@
         {
             this.pnlMain = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblBalance = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSidebar = new System.Windows.Forms.Panel();
@@ -54,7 +54,7 @@
             // 
             this.pnlMain.BackColor = System.Drawing.Color.DarkBlue;
             this.pnlMain.Controls.Add(this.button4);
-            this.pnlMain.Controls.Add(this.label4);
+            this.pnlMain.Controls.Add(this.lblBalance);
             this.pnlMain.Controls.Add(this.label1);
             this.pnlMain.Controls.Add(this.pictureBox1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -62,6 +62,7 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(747, 566);
             this.pnlMain.TabIndex = 5;
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
             // button4
             // 
@@ -72,17 +73,18 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "RELOAD";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label4
+            // lblBalance
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Location = new System.Drawing.Point(210, 345);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(333, 85);
-            this.label4.TabIndex = 5;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblBalance.BackColor = System.Drawing.Color.White;
+            this.lblBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBalance.Location = new System.Drawing.Point(210, 345);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(333, 85);
+            this.lblBalance.TabIndex = 5;
+            this.lblBalance.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -265,7 +267,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblnmeProf;
     }
 }
