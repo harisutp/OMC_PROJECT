@@ -185,7 +185,6 @@
             this.btnMap.Text = "CHOOSE ON MAP";
             this.btnMap.UseVisualStyleBackColor = true;
             this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
-            this.btnMap.MouseEnter += new System.EventHandler(this.btnMap_Click);
             // 
             // label1
             // 
@@ -401,10 +400,9 @@
             this.ClientSize = new System.Drawing.Size(1118, 708);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formLetsRide";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
