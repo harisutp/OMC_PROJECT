@@ -20,6 +20,20 @@ namespace OMC_PROJECT
 
         private void label4_Click(object sender, EventArgs e)
         {
+            //formbank secondForm = new formbank();
+
+            
+           // secondForm.Show();
+
+            
+           // this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formprofile formprofile = new formprofile();
+            formprofile.Show();
+            this.Hide();
            
         }
 
@@ -47,6 +61,18 @@ namespace OMC_PROJECT
         private void UpdateBalanceDisplay()
         {
             lblBalance.Text = "RM " + currentBalance.ToString("0.00");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formLetsRide formLetsRide = new formLetsRide();
+            formLetsRide.Show();
+            this.Hide();
+        }
+
+        private void formbalance_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 

@@ -68,6 +68,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
+            this.pnlSidebar.Controls.Add(this.lblName2);
             this.pnlSidebar.Controls.Add(this.btnProfile);
             this.pnlSidebar.Controls.Add(this.btnBalance);
             this.pnlSidebar.Controls.Add(this.btnRide);
@@ -78,6 +79,7 @@
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(278, 708);
             this.pnlSidebar.TabIndex = 0;
+            this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
             // 
             // btnProfile
             // 
@@ -166,6 +168,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(840, 708);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtPickup
             // 
@@ -313,6 +316,7 @@
             this.cboRegion.Size = new System.Drawing.Size(498, 35);
             this.cboRegion.TabIndex = 0;
             this.cboRegion.Text = "( REGION )";
+            this.cboRegion.SelectedIndexChanged += new System.EventHandler(this.cboRegion_SelectedIndexChanged);
             // 
             // comboBox6
             // 

@@ -31,9 +31,17 @@ namespace OMC_PROJECT
                 MessageBox.Show(error, "Sign up failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             MessageBox.Show("Account created! You can now log in.",
                 "Welcome to MoveAble", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Store the newly registered user in the session so other forms can read it
+            Session.CurrentUser = new User
+            {
+                Name = name,
+                Email = email,
+                Password = password,
+                Disabilities = disabilities
+            };
 
             // Close() triggers the FormClosed handler set up by formlogin, which re-shows it.
             Close();
@@ -43,6 +51,11 @@ namespace OMC_PROJECT
         private void txtName2_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void formsignup_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
