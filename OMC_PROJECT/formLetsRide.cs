@@ -30,7 +30,7 @@ namespace OMC_PROJECT
 
         private void btnRide_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Budu");
+            
         }
 
         private void btnBalance_Click(object sender, EventArgs e)
