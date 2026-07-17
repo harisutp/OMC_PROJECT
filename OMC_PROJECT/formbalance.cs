@@ -12,6 +12,7 @@ namespace OMC_PROJECT
 {
     public partial class formbalance : Form
     {
+        private decimal currentBalance = 1.00m; // Variable to store the current balance
         public formbalance()
         {
             InitializeComponent();
@@ -26,11 +27,28 @@ namespace OMC_PROJECT
         {
             formbank secondForm = new formbank();
 
+            DialogResult result = secondForm.ShowDialog();
 
-            secondForm.Show();
+           
+            if (result == DialogResult.OK)
+            {
+               
+                currentBalance += 19.00m;
+                UpdateBalanceDisplay();
+            }
+        }
+
+        private void pnlMain_Paint(object sender, PaintEventArgs e)
+        {
+            UpdateBalanceDisplay();
+        }
 
 
-            this.Hide();
+        private void UpdateBalanceDisplay()
+        {
+            lblBalance.Text = "RM " + currentBalance.ToString("0.00");
         }
     }
+
+
 }
