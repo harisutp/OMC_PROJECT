@@ -42,7 +42,7 @@
             // 
             this.label12.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label12.Location = new System.Drawing.Point(503, 21);
+            this.label12.Location = new System.Drawing.Point(495, 38);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(163, 80);
             this.label12.TabIndex = 70;
@@ -53,7 +53,7 @@
             // 
             this.label13.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(395, 21);
+            this.label13.Location = new System.Drawing.Point(387, 38);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(123, 80);
             this.label13.TabIndex = 69;
@@ -62,7 +62,7 @@
             // txtPassword2
             // 
             this.txtPassword2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword2.Location = new System.Drawing.Point(263, 298);
+            this.txtPassword2.Location = new System.Drawing.Point(255, 315);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.Size = new System.Drawing.Size(485, 34);
             this.txtPassword2.TabIndex = 76;
@@ -72,7 +72,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(258, 270);
+            this.label16.Location = new System.Drawing.Point(250, 287);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(99, 25);
             this.label16.TabIndex = 72;
@@ -84,7 +84,7 @@
             this.btnSignUp3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSignUp3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp3.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp3.Location = new System.Drawing.Point(263, 444);
+            this.btnSignUp3.Location = new System.Drawing.Point(255, 461);
             this.btnSignUp3.Name = "btnSignUp3";
             this.btnSignUp3.Size = new System.Drawing.Size(179, 43);
             this.btnSignUp3.TabIndex = 77;
@@ -98,7 +98,7 @@
             this.btnLogin2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin2.ForeColor = System.Drawing.Color.White;
-            this.btnLogin2.Location = new System.Drawing.Point(529, 445);
+            this.btnLogin2.Location = new System.Drawing.Point(521, 462);
             this.btnLogin2.Name = "btnLogin2";
             this.btnLogin2.Size = new System.Drawing.Size(194, 42);
             this.btnLogin2.TabIndex = 78;
@@ -109,7 +109,7 @@
             // txtEmail2
             // 
             this.txtEmail2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail2.Location = new System.Drawing.Point(263, 218);
+            this.txtEmail2.Location = new System.Drawing.Point(255, 235);
             this.txtEmail2.Name = "txtEmail2";
             this.txtEmail2.Size = new System.Drawing.Size(485, 34);
             this.txtEmail2.TabIndex = 80;
@@ -120,7 +120,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(258, 181);
+            this.label1.Location = new System.Drawing.Point(250, 198);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 25);
             this.label1.TabIndex = 79;

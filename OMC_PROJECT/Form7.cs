@@ -21,8 +21,7 @@ namespace OMC_PROJECT
         {
             // TODO: This line of code loads data into the 'oMCDataSet1.Record' table. You can move, or remove it, as needed.
             this.recordTableAdapter.Fill(this.oMCDataSet1.Record);
-            // TODO: This line of code loads data into the 'oMCDataSet.Order' table. You can move, or remove it, as needed.
-            this.orderTableAdapter.Fill(this.oMCDataSet.Order);
+            
 
         }
     }
