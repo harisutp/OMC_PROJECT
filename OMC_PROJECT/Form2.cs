@@ -49,8 +49,8 @@ namespace OMC_PROJECT
         private void timersplash_Tick(object sender, EventArgs e)
         {
             timersplash.Stop();
-            formlogin formlogin = new formlogin();
-            formlogin.Show();
+            var frm = new formLetsRide();
+            frm.Show();
             this.Hide(); //hide better bcs close usually exits from the app
         }
     }

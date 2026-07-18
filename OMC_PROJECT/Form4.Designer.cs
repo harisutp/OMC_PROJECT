@@ -1,6 +1,6 @@
 ﻿namespace OMC_PROJECT
 {
-    partial class Form4
+    partial class FormDriver
     {
         /// <summary>
         /// Required designer variable.
@@ -169,6 +169,7 @@
             this.txtDriverEmail.Name = "txtDriverEmail";
             this.txtDriverEmail.Size = new System.Drawing.Size(485, 34);
             this.txtDriverEmail.TabIndex = 49;
+            this.txtDriverEmail.TextChanged += new System.EventHandler(this.txtDriverEmail_TextChanged);
             // 
             // txtDriverName
             // 
@@ -355,7 +356,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(375, 510);
+            this.button1.Location = new System.Drawing.Point(375, 499);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 42);
             this.button1.TabIndex = 60;
