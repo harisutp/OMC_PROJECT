@@ -66,6 +66,26 @@ namespace OMC_PROJECT
             profileForm.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cboRegion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlSidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblName2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 

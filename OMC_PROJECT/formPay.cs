@@ -89,5 +89,20 @@ namespace OMC_PROJECT
 
             this.Hide();
         }
+
+        private void btnBalance_Click(object sender, EventArgs e)
+        {
+            formbalance form2 = new formbalance();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            formprofile formprofile = new formprofile();
+            formprofile.Show();
+            this.Hide();
+
+        }
     }
 }

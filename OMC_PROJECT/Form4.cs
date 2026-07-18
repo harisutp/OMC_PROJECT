@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OMC_PROJECT
 {
-    public partial class Form4 : Form
+    public partial class FormDriver : Form
     {
-        public Form4()
+        public FormDriver()
         {
             InitializeComponent();
         }
@@ -28,6 +28,11 @@ namespace OMC_PROJECT
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDriverEmail_TextChanged(object sender, EventArgs e)
         {
 
         }

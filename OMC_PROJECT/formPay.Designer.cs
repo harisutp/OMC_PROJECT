@@ -50,6 +50,7 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -230,6 +231,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
+            this.pnlSidebar.Controls.Add(this.lblName2);
             this.pnlSidebar.Controls.Add(this.lblnmeProf);
             this.pnlSidebar.Controls.Add(this.btnProfile);
             this.pnlSidebar.Controls.Add(this.btnBalance);
@@ -263,6 +265,7 @@
             this.btnProfile.TabIndex = 3;
             this.btnProfile.Text = "PROFILE";
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnBalance
             // 
@@ -276,6 +279,7 @@
             this.btnBalance.TabIndex = 2;
             this.btnBalance.Text = "BALANCE";
             this.btnBalance.UseVisualStyleBackColor = false;
+            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnRide
             // 
@@ -299,6 +303,14 @@
             this.lblName.Size = new System.Drawing.Size(85, 33);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : ";
+            // 
+            // lblName2
+            // 
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(88, 9);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(153, 54);
+            this.lblName2.TabIndex = 6;
             // 
             // formPay
             // 
@@ -343,5 +355,6 @@
         private System.Windows.Forms.Label lblPlateD;
         private System.Windows.Forms.Label lblCarD;
         private System.Windows.Forms.Label lblNameD;
+        private System.Windows.Forms.Label lblName2;
     }
 }
