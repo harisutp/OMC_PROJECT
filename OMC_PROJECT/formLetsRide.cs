@@ -50,15 +50,7 @@ namespace OMC_PROJECT
             this.Hide();
         }
 
-        private void btnMap_Click(object sender, EventArgs e)
-        {
-            MapForm map = new MapForm();
-
-            if (map.ShowDialog() == DialogResult.OK)
-            {
-                txtPickup.Text = map.SelectedAddress;
-            }
-        }
+        
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
