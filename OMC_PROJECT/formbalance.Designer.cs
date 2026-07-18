@@ -63,6 +63,7 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(747, 566);
             this.pnlMain.TabIndex = 5;
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
             // button4
             // 
@@ -73,16 +74,19 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "RELOAD";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // lblBalance
             // 
             this.lblBalance.BackColor = System.Drawing.Color.White;
             this.lblBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBalance.Location = new System.Drawing.Point(210, 345);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Size = new System.Drawing.Size(333, 85);
             this.lblBalance.TabIndex = 5;
+            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblBalance.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1

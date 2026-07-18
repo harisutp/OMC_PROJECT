@@ -1,6 +1,6 @@
 ﻿namespace OMC_PROJECT
 {
-    partial class Form4
+    partial class FormDriver
     {
         /// <summary>
         /// Required designer variable.
@@ -169,6 +169,7 @@
             this.txtDriverEmail.Name = "txtDriverEmail";
             this.txtDriverEmail.Size = new System.Drawing.Size(485, 34);
             this.txtDriverEmail.TabIndex = 49;
+            this.txtDriverEmail.TextChanged += new System.EventHandler(this.txtDriverEmail_TextChanged);
             // 
             // txtDriverName
             // 

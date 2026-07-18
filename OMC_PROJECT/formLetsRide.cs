@@ -30,7 +30,7 @@ namespace OMC_PROJECT
 
         private void btnRide_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Budu");
+            
         }
 
         private void btnBalance_Click(object sender, EventArgs e)
@@ -56,6 +56,11 @@ namespace OMC_PROJECT
                 txtPickup.Text = map.SelectedAddress;
             }
         }
+
+        private void btnMap_MouseEnter(object sender, EventArgs e)
+        {
+            btnMap.BackColor = Color.LightBlue;
+        }   
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
