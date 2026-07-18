@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
@@ -78,6 +79,15 @@
             this.pnlSidebar.Size = new System.Drawing.Size(278, 708);
             this.pnlSidebar.TabIndex = 0;
             this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
+            // 
+            // lblName2
+            // 
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(99, 10);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(142, 54);
+            this.lblName2.TabIndex = 4;
+            this.lblName2.Click += new System.EventHandler(this.lblName2_Click);
             // 
             // btnProfile
             // 

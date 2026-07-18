@@ -192,7 +192,7 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
-            // txtEmail
+            // txtEmail2
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(199, 203);
@@ -201,7 +201,7 @@
             this.txtEmail.Size = new System.Drawing.Size(334, 29);
             this.txtEmail.TabIndex = 29;
             // 
-            // txtPassword
+            // label1
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(201, 284);
