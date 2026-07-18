@@ -41,6 +41,8 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.dtpExpiryDate = new System.Windows.Forms.DateTimePicker();
             this.btnClear = new System.Windows.Forms.Button();
+            this.lblReload = new System.Windows.Forms.Label();
+            this.txtReload = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -160,7 +162,7 @@
             // 
             // dtpExpiryDate
             // 
-            this.dtpExpiryDate.Location = new System.Drawing.Point(39, 158);
+            this.dtpExpiryDate.Location = new System.Drawing.Point(39, 180);
             this.dtpExpiryDate.Name = "dtpExpiryDate";
             this.dtpExpiryDate.Size = new System.Drawing.Size(191, 22);
             this.dtpExpiryDate.TabIndex = 18;
@@ -175,6 +177,23 @@
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // lblReload
+            // 
+            this.lblReload.AutoSize = true;
+            this.lblReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReload.Location = new System.Drawing.Point(40, 47);
+            this.lblReload.Name = "lblReload";
+            this.lblReload.Size = new System.Drawing.Size(176, 20);
+            this.lblReload.TabIndex = 20;
+            this.lblReload.Text = "Reload Amount (RM) :";
+            // 
+            // txtReload
+            // 
+            this.txtReload.Location = new System.Drawing.Point(216, 47);
+            this.txtReload.Name = "txtReload";
+            this.txtReload.Size = new System.Drawing.Size(100, 22);
+            this.txtReload.TabIndex = 21;
             // 
             // formbank
             // 
@@ -216,5 +235,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DateTimePicker dtpExpiryDate;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label lblReload;
+        private System.Windows.Forms.TextBox txtReload;
     }
 }
