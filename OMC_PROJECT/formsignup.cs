@@ -27,7 +27,7 @@ namespace OMC_PROJECT
             string password = txtPassword2.Text;
             string disabilities = txtDisab.Text.Trim();
 
-            if (UserStore.TryRegister(name, email, password, disabilities, out string error))
+            if (!UserStore.TryRegister(name, email, password, disabilities, out string error))
             {
                 MessageBox.Show(error, "Sign up failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -44,6 +44,11 @@ namespace OMC_PROJECT
         private void txtName2_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void txtPassword2_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

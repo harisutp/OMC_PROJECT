@@ -73,5 +73,10 @@ namespace OMC_PROJECT
             signup.Show();
 
         }
+
+        private void formlogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

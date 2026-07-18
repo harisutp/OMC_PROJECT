@@ -35,7 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblnmeProf = new System.Windows.Forms.Label();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -123,7 +123,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.lblnmeProf);
+            this.panel1.Controls.Add(this.lblName2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
@@ -134,14 +134,16 @@
             this.panel1.Size = new System.Drawing.Size(247, 566);
             this.panel1.TabIndex = 4;
             // 
-            // lblnmeProf
+            // lblName2
             // 
-            this.lblnmeProf.BackColor = System.Drawing.Color.LightGray;
-            this.lblnmeProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnmeProf.Location = new System.Drawing.Point(94, 9);
-            this.lblnmeProf.Name = "lblnmeProf";
-            this.lblnmeProf.Size = new System.Drawing.Size(147, 45);
-            this.lblnmeProf.TabIndex = 5;
+            this.lblName2.BackColor = System.Drawing.Color.LightGray;
+            this.lblName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(117, 12);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(124, 45);
+            this.lblName2.TabIndex = 5;
+            this.lblName2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblName2.Click += new System.EventHandler(this.lblnmeProf_Click);
             // 
             // button1
             // 
@@ -268,6 +270,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblBalance;
-        private System.Windows.Forms.Label lblnmeProf;
+        private System.Windows.Forms.Label lblName2;
     }
 }

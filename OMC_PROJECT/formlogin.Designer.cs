@@ -198,8 +198,10 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(273, 351);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(444, 34);
             this.txtPassword.TabIndex = 30;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // formlogin
             // 
@@ -223,6 +225,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "formlogin";
             this.Text = "formlogin";
+            this.Load += new System.EventHandler(this.formlogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

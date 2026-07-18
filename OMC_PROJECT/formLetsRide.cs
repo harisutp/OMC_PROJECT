@@ -64,5 +64,10 @@ namespace OMC_PROJECT
         {
 
         }
+
+        private void formLetsRide_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }

@@ -133,6 +133,8 @@
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.Size = new System.Drawing.Size(444, 34);
             this.txtPassword2.TabIndex = 30;
+            this.txtPassword2.UseSystemPasswordChar = true;
+            this.txtPassword2.TextChanged += new System.EventHandler(this.txtPassword2_TextChanged);
             // 
             // txtDisab
             // 

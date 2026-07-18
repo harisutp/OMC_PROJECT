@@ -37,6 +37,11 @@ namespace OMC_PROJECT
         {
 
         }
+
+        private void lblnmeProf_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     internal class formbank

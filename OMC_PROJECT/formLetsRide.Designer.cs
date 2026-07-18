@@ -56,6 +56,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.pnlSidebar.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -68,6 +69,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
+            this.pnlSidebar.Controls.Add(this.lblName2);
             this.pnlSidebar.Controls.Add(this.btnProfile);
             this.pnlSidebar.Controls.Add(this.btnBalance);
             this.pnlSidebar.Controls.Add(this.btnRide);
@@ -379,6 +381,16 @@
             this.comboBox3.Size = new System.Drawing.Size(482, 24);
             this.comboBox3.TabIndex = 7;
             // 
+            // lblName2
+            // 
+            this.lblName2.BackColor = System.Drawing.Color.LightGray;
+            this.lblName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(99, 14);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(124, 45);
+            this.lblName2.TabIndex = 6;
+            this.lblName2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // formLetsRide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -389,6 +401,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "formLetsRide";
             this.Text = "formLetsRide";
+            this.Load += new System.EventHandler(this.formLetsRide_Load);
             this.pnlSidebar.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -437,6 +450,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMap;
         private System.Windows.Forms.TextBox txtPickup;
+        private System.Windows.Forms.Label lblName2;
     }
 }
 
