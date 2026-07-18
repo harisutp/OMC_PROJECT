@@ -21,6 +21,9 @@ namespace OMC_PROJECT
     public partial class MapForm : Form
     {
         public string SelectedAddress { get; private set; }
+        public double SelectedLatitude { get; private set; }
+        public double SelectedLongitude { get; private set; }
+        public string SelectedAddress { get; private set; }
         public MapForm()
         {
             InitializeComponent();
@@ -79,12 +82,7 @@ lng:lng
             webView21.NavigateToString(html);
         }
 
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(SelectedAddress);
-            DialogResult = DialogResult.OK;
-            Close();
-        }
+        private
 
         private async void WebView21_WebMessageReceived(object sender, CoreWebView2WebMessageReceivedEventArgs e)
         {
@@ -94,6 +92,8 @@ lng:lng
             double lat = obj["lat"].Value<double>();
             double lng = obj["lng"].Value<double>();
 
+            SelectedLatitude = lat;
+            SelectedLongitude = lng;
             await ReverseGeocode(lat, lng);
         }
 
@@ -115,7 +115,70 @@ lng:lng
                 SelectedAddress = address;
                 MessageBox.Show(SelectedAddress);
 
-                lblAddress.Text = address;
+                txtSearch.Text = address;
+            }
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            Close();
+        }
+
+        private async void btnSearch_Click(object sender, EventArgs e)
+        {
+            string place = txtSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(place))
+            {
+                MessageBox.Show("Enter a location.");
+                return;
+            }
+
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.UserAgent.ParseAdd("OMCProject/1.0");
+
+                string url =
+                    $"https://nominatim.openstreetmap.org/search?q={Uri.EscapeDataString(place)}&format=jsonv2&limit=1";
+
+                string json = await client.GetStringAsync(url);
+
+                JArray result = JArray.Parse(json);
+
+                if (result.Count == 0)
+                {
+                    MessageBox.Show("Location not found.");
+                    return;
+                }
+
+                double lat = double.Parse(result[0]["lat"].ToString());
+                double lon = double.Parse(result[0]["lon"].ToString());
+
+                // Save coordinates even without map click
+                SelectedLatitude = lat;
+                SelectedLongitude = lon;
+
+                await webView21.ExecuteScriptAsync($@"
+            map.setView([{lat}, {lon}], 16);
+
+            if(marker){{
+                map.removeLayer(marker);
+            }}
+
+            marker = L.marker([{lat}, {lon}]).addTo(map);
+        ");
+
+                await ReverseGeocode(lat, lon);
+            }
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
+                e.SuppressKeyPress = true;
             }
         }
     }

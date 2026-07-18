@@ -16,7 +16,7 @@ namespace OMC_PROJECT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formsignup());
+            Application.Run(new formLetsRide());
         }
     }
 }

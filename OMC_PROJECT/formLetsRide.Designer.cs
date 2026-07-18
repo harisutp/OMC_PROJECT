@@ -34,19 +34,6 @@
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtPickup = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.cboPhar = new System.Windows.Forms.ComboBox();
-            this.cboSuperM = new System.Windows.Forms.ComboBox();
-            this.cboHosp = new System.Windows.Forms.ComboBox();
-            this.cboRegion = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.cboTown = new System.Windows.Forms.ComboBox();
             this.cboState = new System.Windows.Forms.ComboBox();
@@ -55,13 +42,28 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.cboRegion = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNext = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPickup = new Guna.UI2.WinForms.Guna2Button();
+            this.btndropoff = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblPickup = new System.Windows.Forms.Label();
+            this.lblDropOff = new System.Windows.Forms.Label();
             this.pnlSidebar.SuspendLayout();
             this.pnlMain.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSidebar
@@ -143,178 +145,6 @@
             this.pnlMain.Size = new System.Drawing.Size(840, 708);
             this.pnlMain.TabIndex = 1;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel1.Controls.Add(this.txtPickup);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lbl1);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.btnNext);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.cboPhar);
-            this.panel1.Controls.Add(this.cboSuperM);
-            this.panel1.Controls.Add(this.cboHosp);
-            this.panel1.Controls.Add(this.cboRegion);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(840, 708);
-            this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // txtPickup
-            // 
-            this.txtPickup.Location = new System.Drawing.Point(182, 165);
-            this.txtPickup.Multiline = true;
-            this.txtPickup.Name = "txtPickup";
-            this.txtPickup.Size = new System.Drawing.Size(484, 137);
-            this.txtPickup.TabIndex = 33;
-            // 
-
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(178, 129);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 22);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Pick up Location:";
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl1.Location = new System.Drawing.Point(0, 0);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(87, 20);
-            this.lbl1.TabIndex = 30;
-            this.lbl1.Text = "Pick up at?";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::OMC_PROJECT.Properties.Resources.IMG_0931;
-            this.pictureBox9.Location = new System.Drawing.Point(50, 111);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 29;
-            this.pictureBox9.TabStop = false;
-            // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.Color.SlateGray;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(350, 618);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(177, 52);
-            this.btnNext.TabIndex = 27;
-            this.btnNext.Text = "NEXT";
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::OMC_PROJECT.Properties.Resources.cropped_circle_image;
-            this.pictureBox8.Location = new System.Drawing.Point(50, 526);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 16;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::OMC_PROJECT.Properties.Resources.IMG_0930;
-            this.pictureBox7.Location = new System.Drawing.Point(50, 407);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::OMC_PROJECT.Properties.Resources.IMG_0933;
-            this.pictureBox6.Location = new System.Drawing.Point(50, 302);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(87, 91);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
-            // 
-            // cboPhar
-            // 
-            this.cboPhar.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboPhar.FormattingEnabled = true;
-            this.cboPhar.Items.AddRange(new object[] {
-            "Farmasi Seri Iskandar",
-            "HTM Pharmacy (Seri Iskandar)",
-            "BIG Pharmacy Ipoh Garden"});
-            this.cboPhar.Location = new System.Drawing.Point(182, 557);
-            this.cboPhar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboPhar.Name = "cboPhar";
-            this.cboPhar.Size = new System.Drawing.Size(498, 35);
-            this.cboPhar.TabIndex = 12;
-            this.cboPhar.Text = "( PICK A PHARMACY )";
-            // 
-            // cboSuperM
-            // 
-            this.cboSuperM.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboSuperM.FormattingEnabled = true;
-            this.cboSuperM.Items.AddRange(new object[] {
-            "Lotus\'s Seri Iskandar",
-            "Econsave Seri Iskandar",
-            "Billion Shopping Centre Seri Iskandar",
-            "Jaya Grocer, Ipoh Parade"});
-            this.cboSuperM.Location = new System.Drawing.Point(182, 439);
-            this.cboSuperM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboSuperM.Name = "cboSuperM";
-            this.cboSuperM.Size = new System.Drawing.Size(498, 35);
-            this.cboSuperM.TabIndex = 11;
-            this.cboSuperM.Text = "( PICK A SUPERMARKET )";
-            // 
-            // cboHosp
-            // 
-            this.cboHosp.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboHosp.FormattingEnabled = true;
-            this.cboHosp.Items.AddRange(new object[] {
-            "SERI ISKANDAR HOSPITAL",
-            "UNIVERSITI TUNKU ABDUL RAHMAN HOSPITAL",
-            "BATU GAJAH HOSPITAL"});
-            this.cboHosp.Location = new System.Drawing.Point(182, 330);
-            this.cboHosp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboHosp.Name = "cboHosp";
-            this.cboHosp.Size = new System.Drawing.Size(498, 35);
-            this.cboHosp.TabIndex = 10;
-            this.cboHosp.Text = "( PICK A HOSPITAL )";
-            // 
-            // cboRegion
-            // 
-            this.cboRegion.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboRegion.FormattingEnabled = true;
-            this.cboRegion.Items.AddRange(new object[] {
-            "PERAK"});
-            this.cboRegion.Location = new System.Drawing.Point(182, 16);
-            this.cboRegion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboRegion.Name = "cboRegion";
-            this.cboRegion.Size = new System.Drawing.Size(498, 35);
-            this.cboRegion.TabIndex = 0;
-            this.cboRegion.Text = "( REGION )";
-            this.cboRegion.SelectedIndexChanged += new System.EventHandler(this.cboRegion_SelectedIndexChanged);
-            // 
             // comboBox6
             // 
             this.comboBox6.FormattingEnabled = true;
@@ -383,6 +213,195 @@
             this.comboBox3.Size = new System.Drawing.Size(482, 28);
             this.comboBox3.TabIndex = 7;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Black;
+            this.guna2CustomGradientPanel1.Controls.Add(this.lblDropOff);
+            this.guna2CustomGradientPanel1.Controls.Add(this.lblPickup);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btndropoff);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnPickup);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnNext);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cboRegion);
+            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox9);
+            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox8);
+            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox7);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox6);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.RoyalBlue;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(840, 708);
+            this.guna2CustomGradientPanel1.TabIndex = 34;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::OMC_PROJECT.Properties.Resources.IMG_0933;
+            this.pictureBox6.Location = new System.Drawing.Point(362, 571);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(178, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 22);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Pick up Location:";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::OMC_PROJECT.Properties.Resources.IMG_0930;
+            this.pictureBox7.Location = new System.Drawing.Point(706, 571);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = global::OMC_PROJECT.Properties.Resources.cropped_circle_image;
+            this.pictureBox8.Location = new System.Drawing.Point(543, 571);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 16;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = global::OMC_PROJECT.Properties.Resources.IMG_0931;
+            this.pictureBox9.Location = new System.Drawing.Point(24, 101);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 29;
+            this.pictureBox9.TabStop = false;
+            // 
+            // cboRegion
+            // 
+            this.cboRegion.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboRegion.FormattingEnabled = true;
+            this.cboRegion.Items.AddRange(new object[] {
+            "PERAK"});
+            this.cboRegion.Location = new System.Drawing.Point(182, 35);
+            this.cboRegion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboRegion.Name = "cboRegion";
+            this.cboRegion.Size = new System.Drawing.Size(498, 35);
+            this.cboRegion.TabIndex = 0;
+            this.cboRegion.Text = "( REGION )";
+            this.cboRegion.SelectedIndexChanged += new System.EventHandler(this.cboRegion_SelectedIndexChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(840, 708);
+            this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnNext
+            // 
+            this.btnNext.AutoRoundedCorners = true;
+            this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(69, 597);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(180, 45);
+            this.btnNext.TabIndex = 32;
+            this.btnNext.Text = "NEXT";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnPickup
+            // 
+            this.btnPickup.AutoRoundedCorners = true;
+            this.btnPickup.BackColor = System.Drawing.Color.Transparent;
+            this.btnPickup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPickup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPickup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPickup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPickup.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPickup.ForeColor = System.Drawing.Color.White;
+            this.btnPickup.Location = new System.Drawing.Point(345, 87);
+            this.btnPickup.Name = "btnPickup";
+            this.btnPickup.Size = new System.Drawing.Size(180, 45);
+            this.btnPickup.TabIndex = 33;
+            this.btnPickup.Text = "PICK UP";
+            this.btnPickup.Click += new System.EventHandler(this.btnPickup_Click);
+            // 
+            // btndropoff
+            // 
+            this.btndropoff.AutoRoundedCorners = true;
+            this.btndropoff.BackColor = System.Drawing.Color.Transparent;
+            this.btndropoff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btndropoff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btndropoff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btndropoff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btndropoff.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btndropoff.ForeColor = System.Drawing.Color.White;
+            this.btndropoff.Location = new System.Drawing.Point(345, 314);
+            this.btndropoff.Name = "btndropoff";
+            this.btndropoff.Size = new System.Drawing.Size(180, 45);
+            this.btndropoff.TabIndex = 34;
+            this.btndropoff.Text = "DROP OFF";
+            this.btndropoff.Click += new System.EventHandler(this.btndropoff_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(178, 330);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 22);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Drop off Location:";
+            // 
+            // lblPickup
+            // 
+            this.lblPickup.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.lblPickup.Location = new System.Drawing.Point(197, 163);
+            this.lblPickup.Name = "lblPickup";
+            this.lblPickup.Size = new System.Drawing.Size(241, 88);
+            this.lblPickup.TabIndex = 36;
+            // 
+            // lblDropOff
+            // 
+            this.lblDropOff.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.lblDropOff.Location = new System.Drawing.Point(197, 400);
+            this.lblDropOff.Name = "lblDropOff";
+            this.lblDropOff.Size = new System.Drawing.Size(241, 88);
+            this.lblDropOff.TabIndex = 37;
+            // 
             // formLetsRide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -390,18 +409,20 @@
             this.ClientSize = new System.Drawing.Size(1118, 708);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formLetsRide";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -429,18 +450,19 @@
         private System.Windows.Forms.ComboBox cboTown;
         private System.Windows.Forms.ComboBox cboState;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cboPhar;
-        private System.Windows.Forms.ComboBox cboSuperM;
-        private System.Windows.Forms.ComboBox cboHosp;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.ComboBox cboRegion;
+        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPickup;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private Guna.UI2.WinForms.Guna2Button btndropoff;
+        private Guna.UI2.WinForms.Guna2Button btnPickup;
+        private Guna.UI2.WinForms.Guna2Button btnNext;
+        private System.Windows.Forms.Label lblPickup;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDropOff;
     }
 }
 

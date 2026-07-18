@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>MoveAble is a specialized e-hailing app designed exclusively for wheelchair users and individuals with walking disabilities. We match you with wheelchair-accessible vehicles, supportive drivers who provide dignified, door-to-door assistance. MoveAble gives you the freedom to travel exactly when and where you want. Your worry-free journey starts here!</value>
-  </data>
 </root>
