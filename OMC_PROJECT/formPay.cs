@@ -12,37 +12,77 @@ namespace OMC_PROJECT
             InitializeComponent();
         }
 
-        public formPay(string destination) : this()
-        {
-            SetDestinationFee(destination);
-        }
+      using System;
+using System.Windows.Forms;
 
-        private void SetDestinationFee(string destination)
+namespace OMC_PROJECT
+    {
+        public partial class formPay : Form
         {
-            switch (destination.Trim().ToUpper())
+            private decimal currentFee = 0.00m;
+
+
+            private static readonly Random random = new Random();
+
+            public formPay()
             {
-                case "SERI ISKANDAR HOSPITAL":
-                    currentFee = 20.00m;
-                    break;
-
-                case "ECONSAVE SERI ISKANDAR":
-                    currentFee = 15.00m;
-                    break;
-
-                case "FARMASI SERI ISKANDAR":
-                    currentFee = 10.00m;
-                    break;
-
-                default:
-                    currentFee = 0.00m;
-                    break;
+                InitializeComponent();
             }
 
-            lblFees.Text = "RM" + currentFee.ToString("0.00");
+            public formPay(string destination) : this()
+            {
+                SetDestinationFee(destination);
+
+
+                SetRandomDriver();
+            }
+
+
+            private void SetRandomDriver()
+            {
+                string[,] drivers =
+                {
+                { "Mahmud", "Toyota", "CCY6556" },
+                { "Lee Kai Wen", "Myvi", "WSD3425" },
+                { "Wong Yi Xuan", "Proton Saga", "GTT0956" },
+                { "Hafiz Zulkifli", "Axia", "KDH4679" },
+                { "Naveen Kumar", "Myvi", "NEC0435" }
+            };
+
+                int randomIndex = random.Next(0, drivers.GetLength(0));
+
+                NameD.Text = drivers[randomIndex, 0];
+                CarD.Text = drivers[randomIndex, 1];
+                PlateD.Text = drivers[randomIndex, 2];
+            }
+
+            private void SetDestinationFee(string destination)
+            {
+                switch (destination.Trim().ToUpper())
+                {
+                    case "SERI ISKANDAR HOSPITAL":
+                        currentFee = 20.00m;
+                        break;
+
+                    case "ECONSAVE SERI ISKANDAR":
+                        currentFee = 15.00m;
+                        break;
+
+                    case "FARMASI SERI ISKANDAR":
+                        currentFee = 10.00m;
+                        break;
+
+                    default:
+                        currentFee = 0.00m;
+                        break;
+                }
+
+                lblFees.Text = "RM" + currentFee.ToString("0.00");
+            }
         }
+    }
 
-
-        private void btnBook_Click(object sender, EventArgs e)
+    private void btnBook_Click(object sender, EventArgs e)
         {
             if (currentFee <= 0)
             {
@@ -83,7 +123,7 @@ namespace OMC_PROJECT
                 MessageBoxIcon.Information
             );
 
-            // Buka receipt
+            
             formreceipt receiptForm = new formreceipt();
             receiptForm.Show();
 
