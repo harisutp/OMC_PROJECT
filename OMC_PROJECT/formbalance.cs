@@ -12,31 +12,15 @@ namespace OMC_PROJECT
 {
     public partial class formbalance : Form
     {
-        private decimal currentBalance = 1.00m; // Variable to store the current balance
+
         public formbalance()
         {
             InitializeComponent();
+
+            lblBalance.Text = "RM " + AppData.Balance.ToString("0.00");
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            formbank secondForm = new formbank();
-
-            DialogResult result = secondForm.ShowDialog();
-
-           
-            if (result == DialogResult.OK)
-            {
-               
-                currentBalance += 19.00m;
-                UpdateBalanceDisplay();
-            }
-        }
+        
 
         private void pnlMain_Paint(object sender, PaintEventArgs e)
         {
@@ -48,6 +32,33 @@ namespace OMC_PROJECT
         {
             lblBalance.Text = "RM " + currentBalance.ToString("0.00");
         }
+
+        
+        
+            private void btnReload_Click(object sender, EventArgs e)
+        {
+            using (formbank secondForm = new formbank())
+            {
+                DialogResult result = secondForm.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    AppData.Balance += secondForm.ReloadAmount;
+
+                    UpdateBalanceDisplay();
+
+                    MessageBox.Show(
+                        "Your new balance is RM" +
+                        AppData.Balance.ToString("0.00"),
+                        "Balance Updated",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+                }
+            }
+        }
+    }
+    }
     }
 
 
