@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
             this.lblBalance = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,7 +56,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.DarkBlue;
-            this.pnlMain.Controls.Add(this.button4);
+            this.pnlMain.Controls.Add(this.btnReload);
             this.pnlMain.Controls.Add(this.lblBalance);
             this.pnlMain.Controls.Add(this.guna2CustomGradientPanel1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -67,17 +67,16 @@
             this.pnlMain.TabIndex = 5;
             this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
-            // button4
+            // btnReload
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(232, 362);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 33);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "RELOAD";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.Location = new System.Drawing.Point(309, 446);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(141, 41);
+            this.btnReload.TabIndex = 6;
+            this.btnReload.Text = "RELOAD";
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // lblBalance
             // 
@@ -90,7 +89,6 @@
             this.lblBalance.Size = new System.Drawing.Size(250, 69);
             this.lblBalance.TabIndex = 5;
             this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBalance.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -315,7 +313,7 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblnmeProf;
         private System.Windows.Forms.Label lblName2;

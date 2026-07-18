@@ -12,45 +12,15 @@ namespace OMC_PROJECT
 {
     public partial class formbalance : Form
     {
-        private decimal currentBalance = 1.00m; // Variable to store the current balance
+
         public formbalance()
         {
             InitializeComponent();
+
+            lblBalance.Text = "RM " + AppData.Balance.ToString("0.00");
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            //formbank secondForm = new formbank();
-
-            
-           // secondForm.Show();
-
-            
-           // this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            formprofile formprofile = new formprofile();
-            formprofile.Show();
-            this.Hide();
-           
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            formbank secondForm = new formbank();
-
-            DialogResult result = secondForm.ShowDialog();
-
-           
-            if (result == DialogResult.OK)
-            {
-               
-                currentBalance += 19.00m;
-                UpdateBalanceDisplay();
-            }
-        }
+        
 
         private void pnlMain_Paint(object sender, PaintEventArgs e)
         {
@@ -63,33 +33,32 @@ namespace OMC_PROJECT
             lblBalance.Text = "RM " + currentBalance.ToString("0.00");
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        
+        
+            private void btnReload_Click(object sender, EventArgs e)
         {
-            formLetsRide formLetsRide = new formLetsRide();
-            formLetsRide.Show();
-            this.Hide();
-        }
+            using (formbank secondForm = new formbank())
+            {
+                DialogResult result = secondForm.ShowDialog();
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            formLetsRide form2 = new formLetsRide();
-            form2.Show();
-            this.Hide();
-        }
+                if (result == DialogResult.OK)
+                {
+                    AppData.Balance += secondForm.ReloadAmount;
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            formbalance form2 = new formbalance();
-            form2.Show();
-            this.Hide();
-        }
+                    UpdateBalanceDisplay();
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            formProfile form2 = new formProfile();
-            form2.Show();
-            this.Hide();
+                    MessageBox.Show(
+                        "Your new balance is RM" +
+                        AppData.Balance.ToString("0.00"),
+                        "Balance Updated",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+                }
+            }
         }
+    }
+    }
     }
 
 
