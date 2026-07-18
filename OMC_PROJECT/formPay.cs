@@ -1,41 +1,93 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OMC_PROJECT
 {
     public partial class formPay : Form
     {
+        private decimal currentFee = 0.00m;
+
         public formPay()
         {
             InitializeComponent();
         }
 
+        public formPay(string destination) : this()
+        {
+            SetDestinationFee(destination);
+        }
+
+        private void SetDestinationFee(string destination)
+        {
+            switch (destination.Trim().ToUpper())
+            {
+                case "SERI ISKANDAR HOSPITAL":
+                    currentFee = 20.00m;
+                    break;
+
+                case "ECONSAVE SERI ISKANDAR":
+                    currentFee = 15.00m;
+                    break;
+
+                case "FARMASI SERI ISKANDAR":
+                    currentFee = 10.00m;
+                    break;
+
+                default:
+                    currentFee = 0.00m;
+                    break;
+            }
+
+            lblFees.Text = "RM" + currentFee.ToString("0.00");
+        }
+
+
         private void btnBook_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Booking successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+            if (currentFee <= 0)
+            {
+                MessageBox.Show(
+                    "Invalid payment amount.",
+                    "Payment Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
 
-        // Added stub for designer-wired click event
-        private void lblNameD_Click(object sender, EventArgs e)
-        {
-            // Intentionally left simple: show a small info or no-op to satisfy designer wiring.
-            // Keep behavior minimal to avoid changing form flow.
-            // You can replace this with real handling as needed.
-            // For now, do nothing.
-        }
+                return;
+            }
 
-        // Added stub for designer-wired click event for Ride button
-        private void btnRide_Click(object sender, EventArgs e)
-        {
-            // Minimal handler: optionally show or open the ride form.
-            // Keep as no-op to avoid altering navigation.
+
+            if (AppData.Balance < currentFee)
+            {
+                MessageBox.Show(
+                    "Insufficient balance.\n\n" +
+                    $"Current Balance: RM{AppData.Balance:0.00}\n" +
+                    $"Required Fees: RM{currentFee:0.00}",
+                    "Payment Failed",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                return;
+            }
+
+
+            AppData.Balance -= currentFee;
+
+            MessageBox.Show(
+                "Booking and payment successful!\n\n" +
+                $"Payment: RM{currentFee:0.00}\n" +
+                $"Remaining Balance: RM{AppData.Balance:0.00}",
+                "Payment Successful",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
+            // Buka receipt
+            formreceipt receiptForm = new formreceipt();
+            receiptForm.Show();
+
+            this.Hide();
         }
     }
 }
