@@ -84,7 +84,6 @@
             this.lblBalance.BackColor = System.Drawing.Color.White;
             this.lblBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBalance.Location = new System.Drawing.Point(158, 280);
             this.lblBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBalance.Name = "lblBalance";
@@ -98,7 +97,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(152, 221);
+            this.label1.Location = new System.Drawing.Point(152, 223);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 40);
@@ -109,7 +108,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources.Wallet_by_back1design1_580x389_removebg_preview1;
-            this.pictureBox1.Location = new System.Drawing.Point(180, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(180, 44);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(206, 166);
@@ -194,6 +193,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "BALANCE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -287,7 +287,6 @@
             this.ClientSize = new System.Drawing.Size(746, 460);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formbalance";
             this.Text = "formbalance";
