@@ -200,6 +200,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(444, 34);
             this.txtPassword.TabIndex = 30;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // formlogin
             // 
