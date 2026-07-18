@@ -75,7 +75,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(207, 39);
+            this.label1.Location = new System.Drawing.Point(215, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 42);
@@ -86,7 +86,7 @@
             // 
             this.lblReceipt.BackColor = System.Drawing.Color.LightGray;
             this.lblReceipt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblReceipt.Location = new System.Drawing.Point(152, 89);
+            this.lblReceipt.Location = new System.Drawing.Point(153, 81);
             this.lblReceipt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReceipt.Name = "lblReceipt";
             this.lblReceipt.Size = new System.Drawing.Size(269, 339);
@@ -186,6 +186,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "PROFILE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -199,6 +200,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "BALANCE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -212,6 +214,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "LET\'S RIDE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
