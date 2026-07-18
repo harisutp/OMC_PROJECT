@@ -45,11 +45,13 @@
             this.cboTown = new System.Windows.Forms.ComboBox();
             this.cboState = new System.Windows.Forms.ComboBox();
             this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.lblnmeProf = new System.Windows.Forms.Label();
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -75,6 +77,7 @@
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
             this.panel1.Controls.Add(this.btnBook);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -84,21 +87,22 @@
             // 
             // btnBook
             // 
-            this.btnBook.BackColor = System.Drawing.Color.SlateGray;
+            this.btnBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBook.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBook.ForeColor = System.Drawing.Color.White;
-            this.btnBook.Location = new System.Drawing.Point(218, 373);
+            this.btnBook.ForeColor = System.Drawing.Color.Black;
+            this.btnBook.Location = new System.Drawing.Point(227, 370);
             this.btnBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(118, 34);
             this.btnBook.TabIndex = 28;
             this.btnBook.Text = "BOOK";
             this.btnBook.UseVisualStyleBackColor = false;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Lavender;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblFees);
             this.panel2.Controls.Add(this.lblPlateD);
@@ -117,6 +121,7 @@
             // 
             // lblFees
             // 
+            this.lblFees.BackColor = System.Drawing.Color.White;
             this.lblFees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblFees.Location = new System.Drawing.Point(59, 197);
             this.lblFees.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -126,15 +131,17 @@
             // 
             // lblPlateD
             // 
+            this.lblPlateD.BackColor = System.Drawing.Color.White;
             this.lblPlateD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPlateD.Location = new System.Drawing.Point(137, 146);
+            this.lblPlateD.Location = new System.Drawing.Point(144, 146);
             this.lblPlateD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlateD.Name = "lblPlateD";
-            this.lblPlateD.Size = new System.Drawing.Size(259, 27);
+            this.lblPlateD.Size = new System.Drawing.Size(252, 27);
             this.lblPlateD.TabIndex = 7;
             // 
             // lblCarD
             // 
+            this.lblCarD.BackColor = System.Drawing.Color.White;
             this.lblCarD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCarD.Location = new System.Drawing.Point(67, 98);
             this.lblCarD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -144,13 +151,13 @@
             // 
             // lblNameD
             // 
+            this.lblNameD.BackColor = System.Drawing.Color.White;
             this.lblNameD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNameD.Location = new System.Drawing.Point(67, 55);
+            this.lblNameD.Location = new System.Drawing.Point(77, 55);
             this.lblNameD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNameD.Name = "lblNameD";
-            this.lblNameD.Size = new System.Drawing.Size(330, 27);
+            this.lblNameD.Size = new System.Drawing.Size(320, 27);
             this.lblNameD.TabIndex = 5;
-            this.lblNameD.Click += new System.EventHandler(this.lblNameD_Click);
             // 
             // label5
             // 
@@ -237,7 +244,8 @@
             // 
             // pnlSidebar
             // 
-            this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
+            this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.pnlSidebar.Controls.Add(this.lblName2);
             this.pnlSidebar.Controls.Add(this.lblnmeProf);
             this.pnlSidebar.Controls.Add(this.btnProfile);
             this.pnlSidebar.Controls.Add(this.btnBalance);
@@ -249,6 +257,16 @@
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(185, 460);
             this.pnlSidebar.TabIndex = 2;
+            // 
+            // lblName2
+            // 
+            this.lblName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(66, 7);
+            this.lblName2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(115, 44);
+            this.lblName2.TabIndex = 6;
             // 
             // lblnmeProf
             // 
@@ -262,7 +280,7 @@
             // 
             // btnProfile
             // 
-            this.btnProfile.BackColor = System.Drawing.Color.DarkGray;
+            this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.Location = new System.Drawing.Point(0, 214);
@@ -272,10 +290,11 @@
             this.btnProfile.TabIndex = 3;
             this.btnProfile.Text = "PROFILE";
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnBalance
             // 
-            this.btnBalance.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBalance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBalance.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBalance.Location = new System.Drawing.Point(0, 136);
@@ -285,10 +304,11 @@
             this.btnBalance.TabIndex = 2;
             this.btnBalance.Text = "BALANCE";
             this.btnBalance.UseVisualStyleBackColor = false;
+            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnRide
             // 
-            this.btnRide.BackColor = System.Drawing.Color.Gray;
+            this.btnRide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnRide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRide.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRide.Location = new System.Drawing.Point(0, 58);
@@ -298,7 +318,6 @@
             this.btnRide.TabIndex = 1;
             this.btnRide.Text = "LET\'S RIDE";
             this.btnRide.UseVisualStyleBackColor = false;
-            this.btnRide.Click += new System.EventHandler(this.btnRide_Click);
             // 
             // lblName
             // 
@@ -310,6 +329,17 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : ";
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Blue;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.RoyalBlue;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-5, 2);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(565, 479);
+            this.guna2CustomGradientPanel1.TabIndex = 29;
+            // 
             // formPay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,6 +347,7 @@
             this.ClientSize = new System.Drawing.Size(746, 460);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formPay";
             this.Text = "formPay";
@@ -353,5 +384,7 @@
         private System.Windows.Forms.Label lblPlateD;
         private System.Windows.Forms.Label lblCarD;
         private System.Windows.Forms.Label lblNameD;
+        private System.Windows.Forms.Label lblName2;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }
