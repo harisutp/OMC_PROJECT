@@ -117,7 +117,7 @@ namespace OMC_PROJECT
 
             return R * c;
         }
-        }
+        
 
         private void pnlSidebar_Paint(object sender, PaintEventArgs e)
         {
