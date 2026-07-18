@@ -1,12 +1,9 @@
-﻿using Microsoft.Web.WebView2.Core;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,21 +12,20 @@ using Microsoft.Web.WebView2.Core;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
 
-
 namespace OMC_PROJECT
 {
-    public partial class MapForm : Form
+    public string SelectedAddress { get; private set; }
+    public double SelectedLatitude { get; private set; }
+    public double SelectedLongitude { get; private set; }
+    public string SelectedAddress { get; private set; }
+    public partial class Form7 : Form
     {
-        public string SelectedAddress { get; private set; }
-        public double SelectedLatitude { get; private set; }
-        public double SelectedLongitude { get; private set; }
-        public string SelectedAddress { get; private set; }
-        public MapForm()
+        public Form7()
         {
             InitializeComponent();
         }
 
-        private async void MapForm_Load(object sender, EventArgs e)
+        private async void Form7_Load(object sender, EventArgs e)
         {
             await webView21.EnsureCoreWebView2Async();
 
@@ -127,6 +123,7 @@ lng:lng
 
         private async void btnSearch_Click(object sender, EventArgs e)
         {
+
             string place = txtSearch.Text.Trim();
 
             if (string.IsNullOrEmpty(place))
@@ -183,8 +180,4 @@ lng:lng
         }
     }
 }
-
-
-    
-    
 

@@ -1,6 +1,6 @@
 ﻿namespace OMC_PROJECT
 {
-    partial class MapForm
+    partial class Form7
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
+            this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             this.SuspendLayout();
-            // 
-            // webView21
-            // 
-            this.webView21.AllowExternalDrop = true;
-            this.webView21.CreationProperties = null;
-            this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(39, 166);
-            this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(1028, 507);
-            this.webView21.TabIndex = 0;
-            this.webView21.ZoomFactor = 1D;
             // 
             // guna2CustomGradientPanel1
             // 
@@ -61,32 +50,7 @@
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1118, 708);
-            this.guna2CustomGradientPanel1.TabIndex = 3;
-            // 
-            // btnConfirm
-            // 
-            this.btnConfirm.AutoRoundedCorners = true;
-            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnConfirm.Location = new System.Drawing.Point(887, 96);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(180, 45);
-            this.btnConfirm.TabIndex = 3;
-            this.btnConfirm.Text = "CONFIRM";
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(39, 24);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(785, 90);
-            this.txtSearch.TabIndex = 4;
+            this.guna2CustomGradientPanel1.TabIndex = 4;
             // 
             // btnSearch
             // 
@@ -105,31 +69,66 @@
             this.btnSearch.Text = "SEARCH";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // MapForm
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(39, 24);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(785, 90);
+            this.txtSearch.TabIndex = 4;
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.AutoRoundedCorners = true;
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConfirm.ForeColor = System.Drawing.Color.White;
+            this.btnConfirm.Location = new System.Drawing.Point(887, 96);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(180, 45);
+            this.btnConfirm.TabIndex = 3;
+            this.btnConfirm.Text = "CONFIRM";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // webView21
+            // 
+            this.webView21.AllowExternalDrop = true;
+            this.webView21.CreationProperties = null;
+            this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
+            this.webView21.Location = new System.Drawing.Point(39, 166);
+            this.webView21.Name = "webView21";
+            this.webView21.Size = new System.Drawing.Size(1028, 507);
+            this.webView21.TabIndex = 0;
+            this.webView21.ZoomFactor = 1D;
+            // 
+            // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(1118, 708);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "MapForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.MapForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
+            this.Name = "Form7";
+            this.Text = "Form7";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2Button btnConfirm;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
+        private Guna.UI2.WinForms.Guna2Button btnConfirm;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
     }
 }
