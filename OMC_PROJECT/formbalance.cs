@@ -32,5 +32,26 @@ namespace OMC_PROJECT
 
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formLetsRide form2 = new formLetsRide();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            formbalance form2 = new formbalance();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formProfile form2 = new formProfile();
+            form2.Show();
+            this.Hide();
+        }
     }
 }
