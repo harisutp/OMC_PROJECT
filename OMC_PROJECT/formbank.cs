@@ -12,6 +12,9 @@ namespace OMC_PROJECT
 {
     public partial class formbank : Form
     {
+        // Amount entered by the user to reload; exposed to caller form
+        public decimal ReloadAmount { get; private set; }
+
         public formbank()
         {
             InitializeComponent();

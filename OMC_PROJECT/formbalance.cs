@@ -30,7 +30,7 @@ namespace OMC_PROJECT
 
         private void UpdateBalanceDisplay()
         {
-            lblBalance.Text = "RM " + currentBalance.ToString("0.00");
+            lblBalance.Text = "RM " + AppData.Balance.ToString("0.00");
         }
 
         
@@ -43,8 +43,8 @@ namespace OMC_PROJECT
 
                 if (result == DialogResult.OK)
                 {
+                    // Update shared balance and refresh UI
                     AppData.Balance += secondForm.ReloadAmount;
-
                     UpdateBalanceDisplay();
 
                     MessageBox.Show(

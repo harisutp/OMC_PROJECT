@@ -56,9 +56,9 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.DarkBlue;
+            this.pnlMain.Controls.Add(this.guna2CustomGradientPanel1);
             this.pnlMain.Controls.Add(this.btnReload);
             this.pnlMain.Controls.Add(this.lblBalance);
-            this.pnlMain.Controls.Add(this.guna2CustomGradientPanel1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(185, 0);
             this.pnlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -177,7 +177,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "PROFILE";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+//            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

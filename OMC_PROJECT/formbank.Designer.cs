@@ -35,8 +35,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCardNum = new System.Windows.Forms.TextBox();
-            this.txtCard = new System.Windows.Forms.TextBox();
-            this.tctCCV = new System.Windows.Forms.TextBox();
+            this.txtNameOnCard = new System.Windows.Forms.TextBox();
+            this.txtCCV = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.dtpExpiryDate = new System.Windows.Forms.DateTimePicker();
@@ -102,39 +102,38 @@
             // 
             // txtCardNum
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(120, 59);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 23);
-            this.textBox2.TabIndex = 12;
+            this.txtCardNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCardNum.Location = new System.Drawing.Point(120, 59);
+            this.txtCardNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCardNum.Name = "txtCardNum";
+            this.txtCardNum.Size = new System.Drawing.Size(138, 23);
+            this.txtCardNum.TabIndex = 12;
             // 
             // txtCard
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(166, 104);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(105, 23);
-            this.textBox3.TabIndex = 13;
+            this.txtNameOnCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameOnCard.Location = new System.Drawing.Point(120, 147);
+            this.txtNameOnCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNameOnCard.Name = "txtNameOnCard";
+            this.txtNameOnCard.Size = new System.Drawing.Size(209, 23);
+            this.txtNameOnCard.TabIndex = 13;
             // 
             // tctCCV
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(120, 147);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(209, 23);
-            this.textBox4.TabIndex = 14;
+            this.txtCCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCCV.Location = new System.Drawing.Point(344, 106);
+            this.txtCCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCCV.Name = "txtCCV";
+            this.txtCCV.Size = new System.Drawing.Size(76, 23);
+            this.txtCCV.TabIndex = 14;
             // 
-            // textBox5
+            // txtAmount (reload amount)
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(344, 106);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(76, 23);
-            this.textBox5.TabIndex = 15;
+            this.txtAmount = new System.Windows.Forms.TextBox();
+            this.txtAmount.Location = new System.Drawing.Point(216, 47);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(100, 22);
+            this.txtAmount.TabIndex = 21;
             // 
             // btnConfirm
             // 
@@ -188,13 +187,6 @@
             this.lblReload.TabIndex = 20;
             this.lblReload.Text = "Reload Amount (RM) :";
             // 
-            // txtReload
-            // 
-            this.txtReload.Location = new System.Drawing.Point(216, 47);
-            this.txtReload.Name = "txtReload";
-            this.txtReload.Size = new System.Drawing.Size(100, 22);
-            this.txtReload.TabIndex = 21;
-            // 
             // formbank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,9 +195,10 @@
             this.ClientSize = new System.Drawing.Size(470, 238);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.tctCCV);
-            this.Controls.Add(this.txtCard);
+            this.Controls.Add(this.txtCCV);
+            this.Controls.Add(this.txtNameOnCard);
             this.Controls.Add(this.txtCardNum);
+            this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -229,8 +222,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCardNum;
-        private System.Windows.Forms.TextBox txtCard;
-        private System.Windows.Forms.TextBox tctCCV;
+        private System.Windows.Forms.TextBox txtNameOnCard;
+        private System.Windows.Forms.TextBox txtCCV;
+        private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DateTimePicker dtpExpiryDate;
