@@ -34,12 +34,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCardNum = new System.Windows.Forms.TextBox();
+            this.txtCard = new System.Windows.Forms.TextBox();
+            this.tctCCV = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.dtpExpiryDate = new System.Windows.Forms.DateTimePicker();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +98,7 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Name on Card :";
             // 
-            // textBox2
+            // txtCardNum
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(120, 59);
@@ -106,7 +107,7 @@
             this.textBox2.Size = new System.Drawing.Size(138, 23);
             this.textBox2.TabIndex = 12;
             // 
-            // textBox3
+            // txtCard
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(166, 104);
@@ -115,7 +116,7 @@
             this.textBox3.Size = new System.Drawing.Size(105, 23);
             this.textBox3.TabIndex = 13;
             // 
-            // textBox4
+            // tctCCV
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(120, 147);
@@ -157,6 +158,24 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // dtpExpiryDate
+            // 
+            this.dtpExpiryDate.Location = new System.Drawing.Point(39, 158);
+            this.dtpExpiryDate.Name = "dtpExpiryDate";
+            this.dtpExpiryDate.Size = new System.Drawing.Size(191, 22);
+            this.dtpExpiryDate.TabIndex = 18;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(290, 332);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(114, 27);
+            this.btnClear.TabIndex = 19;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // formbank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,10 +184,9 @@
             this.ClientSize = new System.Drawing.Size(470, 238);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tctCCV);
+            this.Controls.Add(this.txtCard);
+            this.Controls.Add(this.txtCardNum);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -191,11 +209,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCardNum;
+        private System.Windows.Forms.TextBox txtCard;
+        private System.Windows.Forms.TextBox tctCCV;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.DateTimePicker dtpExpiryDate;
+        private System.Windows.Forms.Button btnClear;
     }
 }

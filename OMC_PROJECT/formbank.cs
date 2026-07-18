@@ -37,5 +37,23 @@ namespace OMC_PROJECT
             this.DialogResult = DialogResult.OK;
             this.Hide();
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtCardNum.Clear();
+            txtCCV.Clear();
+            txtNameOnCard.Clear();
+
+            
+            dtpExpiryDate.Value = DateTime.Now;
+
+            
+            txtCardNum.Focus();
+        }
     }
 }
