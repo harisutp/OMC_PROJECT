@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,13 @@ namespace OMC_PROJECT
             this.recordTableAdapter.Fill(this.oMCDataSet1.Record);
             
 
+    public partial class formHome : Form
+    {
+  
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

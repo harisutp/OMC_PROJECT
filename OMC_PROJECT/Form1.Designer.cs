@@ -47,7 +47,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnConfirm.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnConfirm.Location = new System.Drawing.Point(895, 23);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(125, 39);
@@ -69,14 +69,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(1118, 708);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.webView21);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MapForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MapForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
