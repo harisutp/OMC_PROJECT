@@ -41,6 +41,8 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.dtpExpiryDate = new System.Windows.Forms.DateTimePicker();
             this.btnClear = new System.Windows.Forms.Button();
+            this.lblReload = new System.Windows.Forms.Label();
+            this.txtReload = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 63);
+            this.label4.Location = new System.Drawing.Point(40, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 20);
             this.label4.TabIndex = 3;
@@ -67,7 +69,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 135);
+            this.label5.Location = new System.Drawing.Point(40, 157);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(181, 20);
             this.label5.TabIndex = 4;
@@ -77,7 +79,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(286, 134);
+            this.label6.Location = new System.Drawing.Point(286, 157);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 20);
             this.label6.TabIndex = 5;
@@ -87,7 +89,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 204);
+            this.label7.Location = new System.Drawing.Point(35, 232);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(127, 20);
             this.label7.TabIndex = 6;
@@ -96,7 +98,7 @@
             // txtCardNum
             // 
             this.txtCardNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCardNum.Location = new System.Drawing.Point(39, 86);
+            this.txtCardNum.Location = new System.Drawing.Point(39, 112);
             this.txtCardNum.Name = "txtCardNum";
             this.txtCardNum.Size = new System.Drawing.Size(182, 27);
             this.txtCardNum.TabIndex = 12;
@@ -104,7 +106,7 @@
             // txtCard
             // 
             this.txtCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCard.Location = new System.Drawing.Point(39, 227);
+            this.txtCard.Location = new System.Drawing.Point(39, 255);
             this.txtCard.Name = "txtCard";
             this.txtCard.Size = new System.Drawing.Size(277, 27);
             this.txtCard.TabIndex = 14;
@@ -112,7 +114,7 @@
             // tctCCV
             // 
             this.tctCCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tctCCV.Location = new System.Drawing.Point(290, 157);
+            this.tctCCV.Location = new System.Drawing.Point(290, 180);
             this.tctCCV.Name = "tctCCV";
             this.tctCCV.Size = new System.Drawing.Size(100, 27);
             this.tctCCV.TabIndex = 15;
@@ -120,7 +122,7 @@
             // btnConfirm
             // 
             this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.Location = new System.Drawing.Point(123, 281);
+            this.btnConfirm.Location = new System.Drawing.Point(123, 299);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(281, 27);
             this.btnConfirm.TabIndex = 16;
@@ -141,7 +143,7 @@
             // 
             // dtpExpiryDate
             // 
-            this.dtpExpiryDate.Location = new System.Drawing.Point(39, 158);
+            this.dtpExpiryDate.Location = new System.Drawing.Point(39, 180);
             this.dtpExpiryDate.Name = "dtpExpiryDate";
             this.dtpExpiryDate.Size = new System.Drawing.Size(191, 22);
             this.dtpExpiryDate.TabIndex = 18;
@@ -157,12 +159,31 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // lblReload
+            // 
+            this.lblReload.AutoSize = true;
+            this.lblReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReload.Location = new System.Drawing.Point(40, 47);
+            this.lblReload.Name = "lblReload";
+            this.lblReload.Size = new System.Drawing.Size(176, 20);
+            this.lblReload.TabIndex = 20;
+            this.lblReload.Text = "Reload Amount (RM) :";
+            // 
+            // txtReload
+            // 
+            this.txtReload.Location = new System.Drawing.Point(216, 47);
+            this.txtReload.Name = "txtReload";
+            this.txtReload.Size = new System.Drawing.Size(100, 22);
+            this.txtReload.TabIndex = 21;
+            // 
             // formbank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(561, 371);
+            this.Controls.Add(this.txtReload);
+            this.Controls.Add(this.lblReload);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.dtpExpiryDate);
             this.Controls.Add(this.btnCancel);
@@ -197,5 +218,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DateTimePicker dtpExpiryDate;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label lblReload;
+        private System.Windows.Forms.TextBox txtReload;
     }
 }
