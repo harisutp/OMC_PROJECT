@@ -174,22 +174,7 @@
             this.txtPickup.Size = new System.Drawing.Size(484, 137);
             this.txtPickup.TabIndex = 33;
             // 
-<<<<<<< HEAD
-=======
-            // btnMap
-            // 
-            this.btnMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMap.Location = new System.Drawing.Point(241, 58);
-            this.btnMap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMap.Name = "btnMap";
-            this.btnMap.Size = new System.Drawing.Size(163, 35);
-            this.btnMap.TabIndex = 32;
-            this.btnMap.Text = "CHOOSE ON MAP";
-            this.btnMap.UseVisualStyleBackColor = true;
-            this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
-            
-            // 
->>>>>>> 4ffba63620435a644a8660ced7ee810bfbc4db07
+
             // label1
             // 
             this.label1.AutoSize = true;
