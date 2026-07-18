@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.txtDisabilities = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.lblDisabP = new System.Windows.Forms.Label();
-            this.lblEmailP = new System.Windows.Forms.Label();
-            this.lblNameP = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.NAME = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSidebar.SuspendLayout();
@@ -58,11 +58,11 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.DarkBlue;
+            this.pnlMain.Controls.Add(this.txtDisabilities);
+            this.pnlMain.Controls.Add(this.txtContact);
+            this.pnlMain.Controls.Add(this.txtName);
             this.pnlMain.Controls.Add(this.btnLogout);
             this.pnlMain.Controls.Add(this.btnEdit);
-            this.pnlMain.Controls.Add(this.lblDisabP);
-            this.pnlMain.Controls.Add(this.lblEmailP);
-            this.pnlMain.Controls.Add(this.lblNameP);
             this.pnlMain.Controls.Add(this.label3);
             this.pnlMain.Controls.Add(this.label2);
             this.pnlMain.Controls.Add(this.NAME);
@@ -73,6 +73,39 @@
             this.pnlMain.Size = new System.Drawing.Size(747, 566);
             this.pnlMain.TabIndex = 3;
             // 
+            // txtDisabilities
+            // 
+            this.txtDisabilities.Location = new System.Drawing.Point(168, 440);
+            this.txtDisabilities.Name = "txtDisabilities";
+            this.txtDisabilities.Size = new System.Drawing.Size(350, 22);
+            this.txtDisabilities.TabIndex = 11;
+            this.txtDisabilities.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // txtContact
+            // 
+            this.txtContact.Location = new System.Drawing.Point(168, 357);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(350, 22);
+            this.txtContact.TabIndex = 10;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(168, 280);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(350, 22);
+            this.txtName.TabIndex = 9;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(412, 490);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(106, 36);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.Text = "LOG OUT";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -82,33 +115,6 @@
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // lblDisabP
-            // 
-            this.lblDisabP.BackColor = System.Drawing.Color.White;
-            this.lblDisabP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDisabP.Location = new System.Drawing.Point(168, 436);
-            this.lblDisabP.Name = "lblDisabP";
-            this.lblDisabP.Size = new System.Drawing.Size(444, 33);
-            this.lblDisabP.TabIndex = 6;
-            // 
-            // lblEmailP
-            // 
-            this.lblEmailP.BackColor = System.Drawing.Color.White;
-            this.lblEmailP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEmailP.Location = new System.Drawing.Point(168, 354);
-            this.lblEmailP.Name = "lblEmailP";
-            this.lblEmailP.Size = new System.Drawing.Size(444, 33);
-            this.lblEmailP.TabIndex = 5;
-            // 
-            // lblNameP
-            // 
-            this.lblNameP.BackColor = System.Drawing.Color.White;
-            this.lblNameP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNameP.Location = new System.Drawing.Point(168, 277);
-            this.lblNameP.Name = "lblNameP";
-            this.lblNameP.Size = new System.Drawing.Size(444, 33);
-            this.lblNameP.TabIndex = 4;
             // 
             // label3
             // 
@@ -148,7 +154,7 @@
             this.pictureBox1.Image = global::OMC_PROJECT.Properties.Resources.istockphoto_2171382633_612x612_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(280, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 217);
+            this.pictureBox1.Size = new System.Drawing.Size(192, 194);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -178,7 +184,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(247, 566);
+            this.panel1.Size = new System.Drawing.Size(267, 566);
             this.panel1.TabIndex = 4;
             // 
             // lblnmeProf
@@ -201,6 +207,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "PROFILE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -213,6 +220,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "BALANCE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -225,6 +233,7 @@
             this.button3.TabIndex = 1;
             this.button3.Text = "LET\'S RIDE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -280,16 +289,6 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name : Hassan";
             // 
-            // btnLogout
-            // 
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(412, 490);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(106, 36);
-            this.btnLogout.TabIndex = 8;
-            this.btnLogout.Text = "LOG OUT";
-            this.btnLogout.UseVisualStyleBackColor = true;
-            // 
             // formprofile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -318,11 +317,8 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label NAME;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblNameP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblDisabP;
-        private System.Windows.Forms.Label lblEmailP;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblnmeProf;
         private System.Windows.Forms.Button button1;
@@ -331,5 +327,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.TextBox txtDisabilities;
+        private System.Windows.Forms.TextBox txtContact;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
