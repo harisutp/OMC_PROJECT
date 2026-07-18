@@ -148,7 +148,7 @@
             this.lblNameD.Name = "lblNameD";
             this.lblNameD.Size = new System.Drawing.Size(426, 33);
             this.lblNameD.TabIndex = 5;
-            this.lblNameD.Click += new System.EventHandler(this.lblNameD_Click);
+           
             // 
             // label5
             // 
@@ -293,7 +293,7 @@
             this.btnRide.TabIndex = 1;
             this.btnRide.Text = "LET\'S RIDE";
             this.btnRide.UseVisualStyleBackColor = false;
-            this.btnRide.Click += new System.EventHandler(this.btnRide_Click);
+            
             // 
             // lblName
             // 
