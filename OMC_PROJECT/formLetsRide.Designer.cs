@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.lblName2 = new System.Windows.Forms.Label();
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnRide = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.lblName2 = new System.Windows.Forms.Label();
             this.pnlSidebar.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -77,9 +77,18 @@
             this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(247, 566);
+            this.pnlSidebar.Size = new System.Drawing.Size(247, 612);
             this.pnlSidebar.TabIndex = 0;
             this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
+            // 
+            // lblName2
+            // 
+            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName2.Location = new System.Drawing.Point(99, 10);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(142, 54);
+            this.lblName2.TabIndex = 4;
+            this.lblName2.Click += new System.EventHandler(this.lblName2_Click);
             // 
             // btnProfile
             // 
@@ -139,7 +148,7 @@
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(247, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(747, 566);
+            this.pnlMain.Size = new System.Drawing.Size(823, 612);
             this.pnlMain.TabIndex = 1;
             // 
             // panel1
@@ -161,7 +170,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(747, 566);
+            this.panel1.Size = new System.Drawing.Size(823, 612);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -384,20 +393,11 @@
             this.comboBox3.Size = new System.Drawing.Size(482, 24);
             this.comboBox3.TabIndex = 7;
             // 
-            // lblName2
-            // 
-            this.lblName2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName2.Location = new System.Drawing.Point(99, 10);
-            this.lblName2.Name = "lblName2";
-            this.lblName2.Size = new System.Drawing.Size(142, 54);
-            this.lblName2.TabIndex = 4;
-            this.lblName2.Click += new System.EventHandler(this.lblName2_Click);
-            // 
             // formLetsRide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 566);
+            this.ClientSize = new System.Drawing.Size(1070, 612);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

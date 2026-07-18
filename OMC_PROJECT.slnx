@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="OMC_PROJECT/OMC_PROJECT.csproj" Id="fa454fe0-3d7a-48f0-be62-cd4b62809a36" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="OMC_PROJECT/OMC_PROJECT.csproj" Id="fa454fe0-3d7a-48f0-be62-cd4b62809a36">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
 </Solution>

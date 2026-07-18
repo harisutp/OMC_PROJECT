@@ -399,14 +399,14 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::OMC_PROJECT.Properties.Resources._6219616955832930781_removebg_preview__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(48, 26);
+            this.pictureBox2.Location = new System.Drawing.Point(37, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(898, 547);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 66;
             this.pictureBox2.TabStop = false;
             // 
-            // Form4
+            // FormDriver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -446,7 +446,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Name = "Form4";
+            this.Name = "FormDriver";
             this.Text = "formDriverSignIn";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
