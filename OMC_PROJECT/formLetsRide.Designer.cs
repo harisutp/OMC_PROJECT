@@ -68,7 +68,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.LightGray;
-            this.pnlSidebar.Controls.Add(this.lblName2);
+      
             this.pnlSidebar.Controls.Add(this.btnProfile);
             this.pnlSidebar.Controls.Add(this.btnBalance);
             this.pnlSidebar.Controls.Add(this.btnRide);
@@ -121,7 +121,7 @@
             this.btnRide.TabIndex = 1;
             this.btnRide.Text = "LET\'S RIDE";
             this.btnRide.UseVisualStyleBackColor = false;
-            this.btnRide.Click += new System.EventHandler(this.btnRide_Click);
+            
             // 
             // lblName
             // 
@@ -193,7 +193,7 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl1.Location = new System.Drawing.Point(178, 84);
+            
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(87, 20);
             this.lbl1.TabIndex = 30;
