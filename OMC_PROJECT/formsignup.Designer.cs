@@ -102,7 +102,7 @@
             this.btnSignup.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.Color.White;
             this.btnSignup.Location = new System.Drawing.Point(324, 372);
-            this.btnSignup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignup.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(118, 34);
             this.btnSignup.TabIndex = 26;
@@ -114,7 +114,7 @@
             // 
             this.txtName2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName2.Location = new System.Drawing.Point(214, 135);
-            this.txtName2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName2.Margin = new System.Windows.Forms.Padding(2);
             this.txtName2.Name = "txtName2";
             this.txtName2.Size = new System.Drawing.Size(334, 29);
             this.txtName2.TabIndex = 28;
@@ -124,7 +124,7 @@
             // 
             this.txtEmail2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail2.Location = new System.Drawing.Point(214, 196);
-            this.txtEmail2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail2.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail2.Name = "txtEmail2";
             this.txtEmail2.Size = new System.Drawing.Size(334, 29);
             this.txtEmail2.TabIndex = 29;
@@ -133,7 +133,7 @@
             // 
             this.txtPassword2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword2.Location = new System.Drawing.Point(214, 258);
-            this.txtPassword2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword2.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.Size = new System.Drawing.Size(334, 29);
             this.txtPassword2.TabIndex = 30;
@@ -142,7 +142,7 @@
             // 
             this.txtDisab.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisab.Location = new System.Drawing.Point(214, 318);
-            this.txtDisab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDisab.Margin = new System.Windows.Forms.Padding(2);
             this.txtDisab.Name = "txtDisab";
             this.txtDisab.Size = new System.Drawing.Size(334, 29);
             this.txtDisab.TabIndex = 31;
@@ -175,7 +175,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_1);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formsignup";
             this.Text = "formsignup";
             this.Load += new System.EventHandler(this.formsignup_Load);
