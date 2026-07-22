@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA454FE0-3D7A-48F0-BE62-CD4B62809A36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OMC_PROJECT</RootNamespace>
+    <AssemblyName>OMC_PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OMC_PROJECT.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.4078.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.4078.44\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.4078.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.4078.44\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.4078.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.4078.44\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OleDb, Version=10.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.OleDb.10.0.10\lib\net462\System.Data.OleDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppData.cs" />
+    <Compile Include="BookingData.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formaboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formaboutus.Designer.cs">
+      <DependentUpon>formaboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formadmin.Designer.cs">
+      <DependentUpon>formadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formbank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formbank.Designer.cs">
+      <DependentUpon>formbank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLetsRide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLetsRide.Designer.cs">
+      <DependentUpon>formLetsRide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formbalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formbalance.Designer.cs">
+      <DependentUpon>formbalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlogin.Designer.cs">
+      <DependentUpon>formlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPay.Designer.cs">
+      <DependentUpon>formPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formprofile.Designer.cs">
+      <DependentUpon>formprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formreceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formreceipt.Designer.cs">
+      <DependentUpon>formreceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDriverTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDriverTracking.Designer.cs">
+      <DependentUpon>formDriverTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsignup.Designer.cs">
+      <DependentUpon>formsignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSession.cs" />
+    <Compile Include="UserStore.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formaboutus.resx">
+      <DependentUpon>formaboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formadmin.resx">
+      <DependentUpon>formadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formbank.resx">
+      <DependentUpon>formbank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDriverTracking.resx">
+      <DependentUpon>formDriverTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLetsRide.resx">
+      <DependentUpon>formLetsRide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formbalance.resx">
+      <DependentUpon>formbalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlogin.resx">
+      <DependentUpon>formlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPay.resx">
+      <DependentUpon>formPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formprofile.resx">
+      <DependentUpon>formprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formreceipt.resx">
+      <DependentUpon>formreceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsignup.resx">
+      <DependentUpon>formsignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-07-02 141641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallet-by-back1design1-580x389-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-2171382633-612x612-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6219616955832930781-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6219616955832930781-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallet-by-back1design1-580x389-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0930.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0931.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0933.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0932.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped_circle_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="moveablesplash.mp4" />
+    <Content Include="OMC.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\moveable image.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.4078.44\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.4078.44\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.4078.44\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.4078.44\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>
